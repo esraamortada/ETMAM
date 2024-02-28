@@ -10,7 +10,9 @@ main {
     row-gap: 50px;
     background-color: #FFFFFF;
 }
-
+body{
+    font-family: "PT Serif", serif;
+}
 
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 

@@ -10,7 +10,9 @@ main {
 
     background-color: #FEFDFD;
 }
-
+body{
+    font-family: "PT Serif", serif;
+}
 
 
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/

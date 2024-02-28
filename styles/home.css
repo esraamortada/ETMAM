@@ -13,8 +13,9 @@ main {
 
 body,
 html {
-
+    font-family: "PT Serif", serif;
     overflow-x: hidden;
+    font-family: "PT Serif", serif;
 }
 
 
