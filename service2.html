@@ -14,76 +14,122 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-
-            <div class="logo">
-                <div class="circle">E</div>
-                <p>ETMAM</p>
-            </div>
-
-
-            <nav>
-
-                
+    <div class="main-background">
+        <header>
+            <div class="navbar">
+    
+                <div class="logo">
+                    <div class="circle">E</div>
+                    <p>ETMAM</p>
+                </div>
+    
+    
+                <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Our Services</a></li>
-                        <li><a href="">Projects</a></li>
+                        <li onclick="appear_services()"><a href="#">Our Services</a></li>
+                        <li><a href="details.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="icon" onclick="appear_nav()"><i class="fa-solid fa-bars"></i></div>
+    
+                <div class="mini-nav">
+    
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li onclick="appear_services()"><a href="#">Our Services</a></li>
+                        <li><a href="details.html">Projects</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
     
-            </nav>
-
-            <div class="icon" onclick="appear_nav()"><i class="fa-solid fa-bars"></i></div>
-
-            <div class="mini-nav">
-
-
+                </div>
+                <div class="nav-services">
+    
+                    <div class="ul-container">
+                        <ul>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service1.html"> interior and exterior design</a>
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service2.html"> interior and exterior design</a>
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service3.html"> interior and exterior design</a>
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service4.html"> interior and exterior design</a>
+                            </div></li>
+                        </ul>
+                        <ul>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service5.html"> interior and exterior design</a>
+    
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service6.html"> interior and exterior design</a>
+    
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service7.html"> interior and exterior design</a>
+    
+                            </div></li>
+                            <li><div class="service">
+                                <img src="images/interior and exterior design.svg" alt="">
+                                <a href="service8.html"> interior and exterior design</a>
+    
+                            </div></li>
+                        </ul>
+                    </div>
+    
+    
+    
+    
+                </div>
+    
+                <div class="select" onclick="appear()">
+                    <img src="images/flag.svg" alt=""> English (UK) <i class="fa-solid fa-chevron-down"></i>
+    
+                </div>
+    
+            </div>
+    
+            <div class="language">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Our Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li> <img src="images/flag.svg" alt=""> English (UK) </li>
+                    <li> <img src="images/flag.svg" alt=""> Arabic </li>
+    
                 </ul>
-
+    
             </div>
+    
+        </header>
 
-            <div class="select" onclick="appear()">
-                <img src="images/flag.svg" alt=""> English (UK) <i class="fa-solid fa-chevron-down"></i>
 
-            </div>
-
-        </div>
-
-        <div class="language">
-            <ul>
-                <li> <img src="images/flag.svg" alt=""> English (UK) </li>
-                <li> <img src="images/flag.svg" alt=""> Arabic </li>
-
-            </ul>
-
-        </div>
-
-    </header>
-
-    <main>
-<!--headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
         <section class="header">
 
             <div class="main-header">
-                <h1>Etmam interior and exterior design and decoration</h1>
-                <p>Our expertise lies in transforming spaces, harmonizing both interior and exterior environments. From
-                    cozy living rooms to stunning outdoor landscapes, we create designs that reflect your unique style
-                    and functional needs.</p>
+                <h1>Furniture design and manufacture</h1>
+                <p>Our expertise lies in transforming spaces, harmonizing both interior and exterior environments. From cozy living rooms to stunning outdoor landscapes, we create designs that reflect your unique style and functional needs.</p>
 
                 <button class="header-btn">DISCOVER OUR PROJECTS</button>
             </div>
 
 
         </section>
+
+    </div>
+    <main>
 
         <section class="Aboutus">
 
@@ -215,14 +261,15 @@
             <div class="our-approach2-container">
                 <div class="approach2-content">
 
-                    <div class="head-text">
-                        <p>Our Approach</p>
-                        <h2>Design, Build, and Value</h2>
-                        <p>At ETMAM, we blend creativity and practicality to craft furniture that transcends
-                            functionality. Here’s our approach:</p>
-
-                    </div>
+                   
                     <div class="ul">
+                        <div class="head-text">
+                            <p>Our Approach</p>
+                            <h2>Design, Build, and Value</h2>
+                            <p>At ETMAM, we blend creativity and practicality to craft furniture that transcends
+                                functionality. Here’s our approach:</p>
+    
+                        </div>
 
                         <div class="li">
                             <span>01</span>
@@ -380,6 +427,10 @@
         }
         function appear_nav() {
             document.querySelector(".mini-nav").classList.toggle("display");
+        }
+        function appear_services() {
+            
+            document.querySelector(".nav-services").classList.toggle("display");
         }
     </script>
 </body>
