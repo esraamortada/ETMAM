@@ -16,6 +16,8 @@ html {
 
     overflow-x: hidden;
     font-family: "PT Serif", serif;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -174,8 +176,7 @@ nav {
 
 /*menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu*/
 
-.inner-ul,
-.inner-ul2 {
+.inner-ul,.inner-ul2 {
     display: none;
 }
 
@@ -223,51 +224,53 @@ nav {
     align-items: flex-end;
     border-radius: 10px;
     row-gap: 25px;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    z-index: 3;
 }
 
-.nav-a {
+.mini-nav .nav-a {
     display: flex;
-
-    column-gap: 150px;
+justify-content: space-between;
+    /* column-gap: 150px; */
     align-items: center;
 }
 
-.mini-nav-logo {
+.mini-nav .mini-nav-logo{
     display: flex;
-    column-gap: 130px;
+ /* column-gap: 130px; */
+ width: 100%;
+ justify-content: space-between;
     align-items: center;
 }
-
-.mini-nav-logo .logo .circle {
-    background-color: #4F8280;
+.mini-nav-logo .logo .circle{
+    background-color:#4F8280;
     color: #F4F0EC;
 }
-
-.nav-a .select {
+.nav-a .select{
     display: flex;
+   
 }
-
-.nav-a:last-of-type {
-    margin-top: auto;
-    /*it didnot work*/
+.mini-nav .nav-item .nav-a:last-of-type{
+    margin-top: auto;  /*it didnot work*/
 }
-
-.mini-nav-language {
+.mini-nav-language{
     display: none;
 }
-
-.mini-nav-language ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
+.mini-nav-language ul{
+list-style-type: none;
+display: flex;
+flex-direction: column;
+row-gap: 16px;
 }
-
-.mini-nav-language ul li {
+.mini-nav-language ul li{
     display: flex;
     column-gap: 16px;
 }
-
+.nav-item{
+    width: 100%;
+}
 @media screen and (min-width: 1200px) {
     .mini-nav {
         display: none !important;
@@ -362,6 +365,7 @@ nav {
     }
 
 }
+
 
 /*headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 

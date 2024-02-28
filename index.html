@@ -67,20 +67,20 @@
                                     <li>
                                         <div class="service">
                                             <img src="images/furniture design and manufacture.svg" alt="">
-                                            <a href="service6.html">furniture design and manufacture</a>
+                                            <a href="service2.html">furniture design and manufacture</a>
 
                                         </div>
                                     </li>
                                     <li>
                                         <div class="service">
                                             <img src="images/electrical work.svg" alt="">
-                                            <a href="service2.html">electrical work</a>
+                                            <a href="service3.html">electrical work</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="service">
                                             <img src="images/Air conditioning works.svg" alt="">
-                                            <a href="service3.html"> Air conditioning works</a>
+                                            <a href="service4.html"> Air conditioning works</a>
                                         </div>
                                     </li>
                                     <li>
@@ -185,7 +185,7 @@
                         <div class="mini-nav-language">
                             <ul>
                                 <li> <img src="images/flag.svg" alt=""> English (UK) </li>
-                                <li> <img src="images/flag.svg" alt=""> Arabic </li>
+                                <li > <img src="images/flag.svg" alt=""> Arabic </li>
 
                             </ul>
 
@@ -216,51 +216,54 @@
                                     <a href="service1.html"> interior and exterior design</a>
                                 </div>
                             </li>
+
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service2.html"> interior and exterior design</a>
+                                    <img src="images/furniture design and manufacture.svg" alt="">
+                                    <a href="service2.html">furniture design and manufacture</a>
+
                                 </div>
                             </li>
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service3.html"> interior and exterior design</a>
+                                    <img src="images/electrical work.svg" alt="">
+                                    <a href="service3.html">electrical work</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service4.html"> interior and exterior design</a>
+                                    <img src="images/Air conditioning works.svg" alt="">
+                                    <a href="service4.html"> Air conditioning works</a>
                                 </div>
                             </li>
                         </ul>
                         <ul>
+                           
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service5.html"> interior and exterior design</a>
+                                    <img src="images/painting and wallpaper work.svg" alt="">
+                                    <a href="service5.html">painting and wallpaper work</a>
 
                                 </div>
                             </li>
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service6.html"> interior and exterior design</a>
+                                    <img src="images/gypsum decorations.svg" alt="">
+                                    <a href="service6.html">gypsum decorations</a>
 
                                 </div>
                             </li>
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service7.html"> interior and exterior design</a>
+                                    <img src="images/glass partition walls.svg" alt="">
+                                    <a href="service7.html"> glass partition walls</a>
 
                                 </div>
                             </li>
                             <li>
                                 <div class="service">
-                                    <img src="images/interior and exterior design.svg" alt="">
-                                    <a href="service8.html"> interior and exterior design</a>
+                                    <img src="images/tile,marble,and parquet works.svg" alt="">
+                                    <a href="service8.html">tile,marble,and parquet works</a>
 
                                 </div>
                             </li>
@@ -281,8 +284,8 @@
 
             <div class="language">
                 <ul>
-                    <li> <img src="images/flag.svg" alt=""> English (UK) </li>
-                    <li> <img src="images/flag.svg" alt=""> Arabic </li>
+                    <li onclick="change_language_english()"> <img src="images/flag.svg" alt=""  > English (UK) </li>
+                    <li onclick="change_language()"> <img src="images/flag.svg" alt="" > Arabic </li>
 
                 </ul>
 
@@ -329,7 +332,7 @@
                         </div>
                         <div class="service-card">
                             <img src="images/furniture design and manufacture.svg" alt="">
-                            <p>interior and exterior design</p>
+                            <p>furniture design and manufacture</p>
                         </div>
                         <div class="service-card">
                             <img src="images/electrical work.svg" alt="">
@@ -346,17 +349,18 @@
 
 
                     <div class="row">
+                       
                         <div class="service-card">
                             <img src="images/painting and wallpaper work.svg" alt="">
-                            <p>interior and exterior design</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="images/interior and exterior design.svg" alt="">
                             <p>painting and wallpaper work</p>
                         </div>
                         <div class="service-card">
                             <img src="images/gypsum decorations.svg" alt="">
                             <p>gypsum decorations</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/glass partition walls.svg" alt="">
+                            <p>glass partition walls</p>
                         </div>
                         <div class="service-card">
                             <img src="images/tile,marble,and parquet works.svg" alt="">
@@ -630,7 +634,12 @@
 
             document.querySelector(".mini-nav-language").classList.toggle("display");
         }
-
+        function change_language() {
+            document.querySelector("body").style.direction= "rtl";
+        }
+        function change_language_english() {
+            document.querySelector("body").style.direction= "ltr";
+        }
     </script>
 </body>
 

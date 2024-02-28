@@ -16,10 +16,13 @@ html {
 
     overflow-x: hidden;
     font-family: "PT Serif", serif;
+    position: relative;
+    z-index: 1;
 }
 
 
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
 
 header {
     display: flex;
@@ -221,18 +224,24 @@ nav {
     align-items: flex-end;
     border-radius: 10px;
     row-gap: 25px;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    z-index: 3;
 }
 
-.nav-a {
+.mini-nav .nav-a {
     display: flex;
-
-    column-gap: 150px;
+justify-content: space-between;
+    /* column-gap: 150px; */
     align-items: center;
 }
 
-.mini-nav-logo{
+.mini-nav .mini-nav-logo{
     display: flex;
- column-gap: 130px;
+ /* column-gap: 130px; */
+ width: 100%;
+ justify-content: space-between;
     align-items: center;
 }
 .mini-nav-logo .logo .circle{
@@ -241,8 +250,9 @@ nav {
 }
 .nav-a .select{
     display: flex;
+   
 }
-.nav-a:last-of-type{
+.mini-nav .nav-item .nav-a:last-of-type{
     margin-top: auto;  /*it didnot work*/
 }
 .mini-nav-language{
@@ -258,7 +268,9 @@ row-gap: 16px;
     display: flex;
     column-gap: 16px;
 }
-
+.nav-item{
+    width: 100%;
+}
 @media screen and (min-width: 1200px) {
     .mini-nav {
         display: none !important;
@@ -353,7 +365,6 @@ row-gap: 16px;
     }
 
 }
-
 
 /*headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
@@ -506,13 +517,12 @@ row-gap: 16px;
 
 
 .services-header {
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
 
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
 }
 
 .services-header blockquote {
@@ -579,7 +589,7 @@ row-gap: 16px;
 
 
     }
-
+/* 
     .services-img img {
         width: 70%;
 
@@ -594,7 +604,7 @@ row-gap: 16px;
         height: 90%;
 
 
-    }
+    } */
 
 
 
@@ -624,7 +634,7 @@ row-gap: 16px;
 
     }
 
-    .services-img img {
+    /* .services-img img {
         width: 70%;
 
 
@@ -637,7 +647,7 @@ row-gap: 16px;
         height: 90%;
 
 
-    }
+    } */
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -662,7 +672,7 @@ row-gap: 16px;
 
     }
 
-    .services-img img {
+    /* .services-img img {
         width: 90%;
 
 
@@ -673,7 +683,7 @@ row-gap: 16px;
         height: 90%;
 
 
-    }
+    } */
 
 
 
@@ -738,7 +748,7 @@ row-gap: 16px;
 
 .Approatch-header {
     width: 50%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
     display: flex;
     flex-direction: column;
@@ -757,7 +767,7 @@ row-gap: 16px;
 
 
 .Approatch-img {
-    width: 50%;
+    width: 40%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -809,7 +819,7 @@ row-gap: 16px;
     }
 
     .Approatch-img {
-        width: 80%;
+        width: 70%;
 
 
     }
@@ -859,7 +869,7 @@ row-gap: 16px;
     }
 
     .Approatch-img {
-        width: 80%;
+        width: 70%;
 
 
     }
@@ -903,7 +913,7 @@ row-gap: 16px;
     }
 
     .Approatch-img {
-        width: 80%;
+        width: 70%;
 
 
     }
@@ -992,7 +1002,7 @@ row-gap: 16px;
 
 
 .Aboutus-content {
-    width: 60%;
+    width: 50%;
     padding: 0px 60px;
     display: flex;
     flex-direction: column;
@@ -1007,7 +1017,7 @@ row-gap: 16px;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     transform: rotate(90deg);
-    width: 500px;
+    width: 480px;
     transition: all 1s ease-in-out;
     margin-top: -50px; 
     margin-bottom: -50px;
@@ -1035,7 +1045,7 @@ row-gap: 16px;
 .li {
     display: flex;
     column-gap: 20px;
-    width: 70%;
+    width: 95%;
     text-align: left;
 }
 
@@ -1094,7 +1104,7 @@ row-gap: 16px;
     }
 
     .Aboutus img {
-        width: 60%;
+        /* width: 0%; */
         height: auto;
         margin-left: auto;
     }
@@ -1132,7 +1142,7 @@ row-gap: 16px;
 
 
     .Aboutus img {
-        width: 60%;
+        /* width: 60%; */
         height: auto;
         margin-left: auto;
     }
@@ -1175,7 +1185,7 @@ row-gap: 16px;
 
 
     .Aboutus img {
-        width: 60%;
+        /* width: 60%; */
         height: auto;
         margin-left: auto;
     }
@@ -1694,51 +1704,3 @@ input::placeholder {
 
 
 
-
-/*  */
-
-
-@media screen and (max-width: 1200px) and (min-width:992px) {
-
-    .our-Approatch {
-        flex-direction: column;
-
-        row-gap: 30px;
-        padding: 50px 0;
-
-    }
-
-
-
-    .Approatch-header {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .Approatch-img {
-        width: 80%;
-
-
-    }
-
-    .Approatch-img img {
-        width: 90%;
-
-
-    }
-
-    .Approatch-img::before {
-        width: 98%;
-        height: 90%;
-
-
-    }
-
-
-
-
-
-
-
-
-}

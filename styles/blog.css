@@ -13,6 +13,8 @@ main {
 
 body{
     font-family: "PT Serif", serif;
+    position: relative;
+    z-index: 1;
 }
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
@@ -217,18 +219,24 @@ nav {
     align-items: flex-end;
     border-radius: 10px;
     row-gap: 25px;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    z-index: 3;
 }
 
-.nav-a {
+.mini-nav .nav-a {
     display: flex;
-
-    column-gap: 150px;
+justify-content: space-between;
+    /* column-gap: 150px; */
     align-items: center;
 }
 
-.mini-nav-logo{
+.mini-nav .mini-nav-logo{
     display: flex;
- column-gap: 130px;
+ /* column-gap: 130px; */
+ width: 100%;
+ justify-content: space-between;
     align-items: center;
 }
 .mini-nav-logo .logo .circle{
@@ -237,8 +245,9 @@ nav {
 }
 .nav-a .select{
     display: flex;
+   
 }
-.nav-a:last-of-type{
+.mini-nav .nav-item .nav-a:last-of-type{
     margin-top: auto;  /*it didnot work*/
 }
 .mini-nav-language{
@@ -254,7 +263,9 @@ row-gap: 16px;
     display: flex;
     column-gap: 16px;
 }
-
+.nav-item{
+    width: 100%;
+}
 @media screen and (min-width: 1200px) {
     .mini-nav {
         display: none !important;
@@ -349,7 +360,6 @@ row-gap: 16px;
     }
 
 }
-
 
 /*headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
