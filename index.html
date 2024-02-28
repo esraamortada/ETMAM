@@ -7,117 +7,290 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;1,300&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;1,300&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css">
     <title>ETMAM</title>
 </head>
 
 <body>
     <div class="main-background">
-    <header>
-        <div class="navbar">
-
-            <div class="logo">
-                <div class="circle">E</div>
-                <p>ETMAM</p>
-            </div>
-
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li onclick="appear_services()"><a href="#">Our Services</a></li>
-                    <li><a href="details.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="icon" onclick="appear_nav()"><i class="fa-solid fa-bars"></i></div>
-
-            <div class="mini-nav">
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li onclick="appear_services()"><a href="#">Our Services</a></li>
-                    <li><a href="details.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-
-
-            </div>
-            <div class="nav-services">
-
-                <div class="ul-container">
-                    <ul>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service1.html"> interior and exterior design</a>
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service2.html"> interior and exterior design</a>
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service3.html"> interior and exterior design</a>
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service4.html"> interior and exterior design</a>
-                        </div></li>
-                    </ul>
-                    <ul>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service5.html"> interior and exterior design</a>
-
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service6.html"> interior and exterior design</a>
-
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service7.html"> interior and exterior design</a>
-
-                        </div></li>
-                        <li><div class="service">
-                            <img src="images/interior and exterior design.svg" alt="">
-                            <a href="service8.html"> interior and exterior design</a>
-
-                        </div></li>
-                    </ul>
+        <header>
+            <div class="navbar">
+                <!--logoooooooooooooooooooooooooooooooooooooooooooooooooo-->
+                <div class="logo">
+                    <div class="circle">E</div>
+                    <p>ETMAM</p>
                 </div>
 
+                <!--main-navvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li onclick="appear_services()"><a href="#">Our Services</a></li>
+                        <li><a href="details.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="icon" onclick="appear_nav()"><i class="fa-solid fa-bars"></i></div>
+
+                <div class="mini-nav">
+
+                    <div class="ul">
+                        <div class="mini-nav-logo">
+
+                            <div class="logo">
+                                <div class="circle">E</div>
+                                <p>ETMAM</p>
+                            </div>
+                            <i class="fa-solid fa-x" onclick="hide_nav()"></i>
+                        </div>
+
+                        <div class="nav-a"><a href="index.html">Home</a></div>
+                        <div class="nav-item">
+                            <div class="nav-a" onclick="appear_menu_services()"><i
+                                    class="fa-solid fa-angle-down"></i>Our Services</a></div>
+                            <div class="inner-ul">
+                                <ul>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service1.html"> interior and exterior design</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/furniture design and manufacture.svg" alt="">
+                                            <a href="service6.html">furniture design and manufacture</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/electrical work.svg" alt="">
+                                            <a href="service2.html">electrical work</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/Air conditioning works.svg" alt="">
+                                            <a href="service3.html"> Air conditioning works</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/painting and wallpaper work.svg" alt="">
+                                            <a href="service4.html">painting and wallpaper work</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/gypsum decorations.svg" alt="">
+                                            <a href="service5.html">gypsum decorations</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/furniture design and manufacture.svg" alt="">
+                                            <a href="service6.html">furniture design and manufacture</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/glass partition walls.svg" alt="">
+                                            <a href="service7.html"> glass partition walls</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/tile,marble,and parquet works.svg" alt="">
+                                            <a href="service8.html">tile,marble,and parquet works</a>
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-a" onclick="appear_menu_projects()"><i
+                                    class="fa-solid fa-angle-down"></i>Our Projects</a></div>
+                            <div class="inner-ul2">
+                                <ul>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service1.html"> interior and exterior design</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service2.html"> interior and exterior design</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service3.html"> interior and exterior design</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service4.html"> interior and exterior design</a>
+                                        </div>
+                                    </li>
 
 
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service7.html"> interior and exterior design</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="service">
+                                            <img src="images/interior and exterior design.svg" alt="">
+                                            <a href="service8.html"> interior and exterior design</a>
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                        <div class="nav-a">
+                            <div class="select" onclick="mini_nav_language()">
+                                <i class="fa-solid fa-chevron-down"></i> English (UK) <img src="images/flag.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="mini-nav-language">
+                            <ul>
+                                <li> <img src="images/flag.svg" alt=""> English (UK) </li>
+                                <li> <img src="images/flag.svg" alt=""> Arabic </li>
+
+                            </ul>
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="nav-services">
+
+                    <div class="ul-container">
+                        <ul>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service1.html"> interior and exterior design</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service2.html"> interior and exterior design</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service3.html"> interior and exterior design</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service4.html"> interior and exterior design</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service5.html"> interior and exterior design</a>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service6.html"> interior and exterior design</a>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service7.html"> interior and exterior design</a>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service">
+                                    <img src="images/interior and exterior design.svg" alt="">
+                                    <a href="service8.html"> interior and exterior design</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="select" onclick="appear()">
+                    <img src="images/flag.svg" alt=""> English (UK) <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
 
             </div>
 
-            <div class="select" onclick="appear()">
-                <img src="images/flag.svg" alt=""> English (UK) <i class="fa-solid fa-chevron-down"></i>
+            <div class="language">
+                <ul>
+                    <li> <img src="images/flag.svg" alt=""> English (UK) </li>
+                    <li> <img src="images/flag.svg" alt=""> Arabic </li>
+
+                </ul>
 
             </div>
 
-        </div>
+        </header>
 
-        <div class="language">
-            <ul>
-                <li> <img src="images/flag.svg" alt=""> English (UK) </li>
-                <li> <img src="images/flag.svg" alt=""> Arabic </li>
-
-            </ul>
-
-        </div>
-
-    </header>
-
-   
+        <!--main headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
 
         <section class="header">
 
@@ -134,67 +307,67 @@
     <main>
         <section class="our-services">
 
-          <div class="our-services-content">
-            <div class="services-header">
-                <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                    ut labore et dolore magna aliquyam erat,
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                    gubergren, no sea takimata </p>
-            </div>
-
-               
-            <div class="cards-container">
-
-
-                    
-
-              <div class="row">
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
+            <div class="our-services-content">
+                <div class="services-header">
+                    <h2>Our Services</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren, no sea takimata </p>
                 </div>
 
-              </div>
+
+                <div class="cards-container">
 
 
 
 
-              <div class="row">
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
+                    <div class="row">
+                        <div class="service-card">
+                            <img src="images/interior and exterior design.svg" alt="">
+                            <p>interior and exterior design</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/furniture design and manufacture.svg" alt="">
+                            <p>interior and exterior design</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/electrical work.svg" alt="">
+                            <p>electrical work</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/Air conditioning works.svg" alt="">
+                            <p>Air conditioning works</p>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="service-card">
+                            <img src="images/painting and wallpaper work.svg" alt="">
+                            <p>interior and exterior design</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/interior and exterior design.svg" alt="">
+                            <p>painting and wallpaper work</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/gypsum decorations.svg" alt="">
+                            <p>gypsum decorations</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="images/tile,marble,and parquet works.svg" alt="">
+                            <p>tile,marble,and parquet works</p>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/interior and exterior design.svg" alt="">
-                    <p>interior and exterior design</p>
-                </div>
-
-              </div>
-
-
-
-            </div>
 
             </div>
 
@@ -241,20 +414,20 @@
             <img src="images/unsplash_OlFHzNjg9kY.svg" alt="">
 
 
-            
-
-                <div class="Aboutus-header">
-                    <h2>ABOUT US</h2>
-                    <p>Etmam for interior design and decoration was established in the kingdom of Saudi Arabia to meet
-                        all customer
-                        requirements in designing projects, whether internal and external finishes decorations,
-                        electrical works, central air conditioners,
-                        splits, and network air conditioners, and providing all maintenance services for all our own
-                        work or other works implemented by other parties. </p>
-                </div>
 
 
-     
+            <div class="Aboutus-header">
+                <h2>ABOUT US</h2>
+                <p>Etmam for interior design and decoration was established in the kingdom of Saudi Arabia to meet
+                    all customer
+                    requirements in designing projects, whether internal and external finishes decorations,
+                    electrical works, central air conditioners,
+                    splits, and network air conditioners, and providing all maintenance services for all our own
+                    work or other works implemented by other parties. </p>
+            </div>
+
+
+
         </section>
 
 
@@ -324,49 +497,49 @@
             <div class="blog-container">
 
 
-                
-
-            
-             
 
 
-            <div class="card-container">
 
-                <div class="card">
-                    <img src="images/Group 2.svg" alt="" >
-        
-                    <div class="text">
-                        <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
-        
-                        <small>Read More </small>
+
+
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="images/Group 2.svg" alt="">
+
+                        <div class="text">
+                            <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
+
+                            <small>Read More </small>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="images/Group 2.svg" alt="">
-        
-                    <div class="text">
-                        <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
-        
-                        <small>Read More </small>
+                    <div class="card">
+                        <img src="images/Group 2.svg" alt="">
+
+                        <div class="text">
+                            <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
+
+                            <small>Read More </small>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="images/Group 2.svg" alt="">
-        
-                    <div class="text">
-                        <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
-        
-                        <small>Read More </small>
+                    <div class="card">
+                        <img src="images/Group 2.svg" alt="">
+
+                        <div class="text">
+                            <p>DOIS URNA NEQUE COLLICITUDIN BLANDIT CONDIMENTUM AT</p>
+
+                            <small>Read More </small>
+                        </div>
                     </div>
+
+
                 </div>
-
-
-            </div>
-            <img src="images/unsplash_OlFHzNjg9kY.svg" alt="" class="blog-img">
+                <img src="images/unsplash_OlFHzNjg9kY.svg" alt="" class="blog-img">
 
 
 
-                
+
             </div>
 
         </section>
@@ -437,10 +610,25 @@
             document.querySelector(".language").classList.toggle("display");
         }
         function appear_nav() {
-            document.querySelector(".mini-nav").classList.toggle("display");
+            document.querySelector(".mini-nav").style.display = "block";
+        }
+        function hide_nav() {
+            document.querySelector(".mini-nav").style.display = "none";
         }
         function appear_services() {
             document.querySelector(".nav-services").classList.toggle("display");
+        }
+        function appear_menu_services() {
+            document.querySelector(".inner-ul").classList.toggle("display");
+        }
+        function appear_menu_projects() {
+
+            document.querySelector(".inner-ul2").classList.toggle("display");
+
+        }
+        function mini_nav_language() {
+
+            document.querySelector(".mini-nav-language").classList.toggle("display");
         }
 
     </script>

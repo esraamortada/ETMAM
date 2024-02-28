@@ -22,17 +22,19 @@ html {
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
 
+
 header {
     display: flex;
     width: 100%;
-    /* background-image: url('../images/service6.svg'); */
+    /* background-image: url('../images/service3.svg'); */
     background-size: cover;
     align-items: center;
-    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
- 
+
     padding: 20px 0px;
     color: #F4F0EC;
     position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+
 }
 
 .logo {
@@ -117,28 +119,6 @@ nav {
     column-gap: 10px;
 }
 
-.mini-nav {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    z-index: 2;
-}
-
-.mini-nav ul {
-    list-style-type: none;
-    width: 170px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
-    background-color: #F4F0EC;
-    color: #293336;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    row-gap: 16px;
-}
 
 .icon {
     display: none;
@@ -149,32 +129,35 @@ nav {
 }
 
 
-.nav-services{
+.nav-services {
     display: none;
     position: absolute;
     top: 70px;
     right: 30%;
     z-index: 2;
 }
+
 .nav-services ul {
     list-style-type: none;
-    
- 
-   width: 50%;
-   
+
+
+    width: 50%;
+
     color: #293336;
     display: flex;
     flex-direction: column;
-   
+
     border-radius: 6px;
     row-gap: 20px;
 }
-.service{
+
+.service {
     display: flex;
     column-gap: 15px;
     align-items: center;
 }
-.ul-container{
+
+.ul-container {
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -183,38 +166,115 @@ nav {
     background-color: #F4F0EC;
     border-radius: 6px;
 }
-.service a{
+
+.service a {
     color: #293336;
     text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) and (min-width:992px) {
 
+/*menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu*/
 
-    nav {
-        display: none;
-    }
-
-    .icon {
-        display: block;
-    }
-
-    .select {
-        display: none;
-    }
-
-    .language {
-        display: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: #293336;
-        font-size: 20px;
-    }
+.inner-ul,.inner-ul2 {
+    display: none;
 }
 
-@media screen and (max-width: 992px) and (min-width:786px) {
+.inner-ul ul,
+.inner-ul2 ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    list-style-type: none;
+    padding: 20px 0px;
+
+
+}
+
+.mini-nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+    z-index: 2;
+    transition: all 1s ease-in-out;
+}
+
+.mini-nav a {
+    color: #293336;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.mini-nav .ul {
+    list-style-type: none;
+    width: 300px;
+    height: 100vh;
+
+    padding: 40px 20px;
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    background-color: #F4F0EC;
+    color: #293336;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-end;
+    border-radius: 10px;
+    row-gap: 25px;
+}
+
+.nav-a {
+    display: flex;
+
+    column-gap: 150px;
+    align-items: center;
+}
+
+.mini-nav-logo{
+    display: flex;
+ column-gap: 130px;
+    align-items: center;
+}
+.mini-nav-logo .logo .circle{
+    background-color:#4F8280;
+    color: #F4F0EC;
+}
+.nav-a .select{
+    display: flex;
+}
+.nav-a:last-of-type{
+    margin-top: auto;  /*it didnot work*/
+}
+.mini-nav-language{
+    display: none;
+}
+.mini-nav-language ul{
+list-style-type: none;
+display: flex;
+flex-direction: column;
+row-gap: 16px;
+}
+.mini-nav-language ul li{
+    display: flex;
+    column-gap: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+    .mini-nav {
+        display: none !important;
+    }
+
+    /* .language {
+        display: none !important;
+    } */
+
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width:786px) {
 
 
 
