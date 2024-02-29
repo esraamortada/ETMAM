@@ -333,6 +333,9 @@ nav {
     .nav-services{
         display: none !important;
     }
+    .mini-nav{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -359,6 +362,9 @@ nav {
     }
     .nav-services{
         display: none !important;
+    }
+    .mini-nav{
+        display: none;
     }
 
 }
@@ -388,6 +394,9 @@ nav {
     }
     .nav-services{
         display: none !important;
+    }
+    .mini-nav{
+        display: none;
     }
 }
 

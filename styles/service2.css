@@ -263,15 +263,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -282,7 +284,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -333,8 +335,13 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
+    }
+
+    .mini-nav {
+        display: none;
     }
 
 }
@@ -353,18 +360,24 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
 
+    .mini-nav {
+        display: none;
+    }
 }
 
 
@@ -385,15 +398,20 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
 
+    .mini-nav {
+        display: none;
+    }
 }
 
 

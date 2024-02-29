@@ -318,7 +318,7 @@
 
     </div>
     <main>
-        <section class="our-services">
+        <section class="our-services" >
 
             <div class="our-services-content">
                 <div class="services-header">
@@ -503,7 +503,7 @@
         </section>
 
 
-        <section class="blog">
+        <section class="blog" >
             <div class="discover-header">
                 <h2>BLOG</h2>
                 <button> see more <i class="fa-solid fa-chevron-right"></i> </button>
@@ -647,9 +647,11 @@
         function change_language() {
             document.querySelector("body").style.direction = "rtl";
             document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
+            document.querySelector(".Aboutus-header").style.padding = "0";
+           
             // document.querySelector(".rotated-img").style.margin = " 0 auto 0 0";
             document.querySelector(".blog-img").style.transform = "rotate(90deg)";
-            document.querySelector(".blog-img").style.margin = "0";
+            document.querySelector(".blog-img").style.margin = "0 auto 0 0";
 
         }
         function change_language_english() {

@@ -338,6 +338,9 @@ nav {
     .nav-services{
         display: none !important;
     }
+    .mini-nav{
+        display: none;
+    }
 
 }
 
@@ -365,6 +368,9 @@ nav {
     }
     .nav-services{
         display: none !important;
+    }
+    .mini-nav{
+        display: none;
     }
 
 }
@@ -394,6 +400,9 @@ nav {
     }
     .nav-services{
         display: none !important;
+    }
+    .mini-nav{
+        display: none;
     }
 
 }

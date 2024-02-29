@@ -7,11 +7,11 @@
 main {
     display: flex;
     flex-direction: column;
- 
+
     background-color: #FEFDFD;
     position: relative;
     z-index: 1;
-   
+
 }
 
 body,
@@ -267,15 +267,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -286,7 +288,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -337,8 +339,13 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
+    }
+
+    .mini-nav {
+        display: none;
     }
 
 }
@@ -357,17 +364,25 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
+
+    .mini-nav {
+        display: none;
+    }
+
 
 }
 
@@ -389,27 +404,35 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
+
+    .mini-nav {
+        display: none;
+    }
+
 
 }
 
 /*headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
 
-.main-background{
+.main-background {
     background-image: url('../images/service7.svg');
     background-size: cover;
     position: relative;
     z-index: 2;
 }
-.main-background::before{
+
+.main-background::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -427,7 +450,7 @@ nav {
     align-items: center;
     color: #FFFFFF;
     background-size: cover;
-  
+
 
 }
 
@@ -528,7 +551,7 @@ nav {
         font-size: 26px;
     }
 
-    
+
     .header-btn {
         font-size: 12px;
         width: 190px;
@@ -539,7 +562,8 @@ nav {
 
 /*our approachhhhhhhhhhhhhhhhhhhh*/
 
-.our-Approatch,.our-Approatch2 {
+.our-Approatch,
+.our-Approatch2 {
     width: 80%;
     margin: auto;
     display: flex;
@@ -608,7 +632,8 @@ nav {
         padding: 50px 0;
 
     }
-    .our-Approatch2{
+
+    .our-Approatch2 {
         flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0;
@@ -650,16 +675,17 @@ nav {
 
 }
 
-@media screen and (max-width: 992px) and (min-width:786px){
+@media screen and (max-width: 992px) and (min-width:786px) {
 
-    .our-Approatch{
+    .our-Approatch {
         flex-direction: column;
 
         row-gap: 30px;
         padding: 50px 0;
 
     }
-    .our-Approatch2{
+
+    .our-Approatch2 {
         flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0;
@@ -704,7 +730,8 @@ nav {
         padding: 50px 0;
 
     }
-    .our-Approatch2{
+
+    .our-Approatch2 {
         flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0;
@@ -752,7 +779,8 @@ nav {
         padding: 50px 0;
 
     }
-    .our-Approatch2{
+
+    .our-Approatch2 {
         flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0;
@@ -784,7 +812,7 @@ nav {
     }
 
     .Approatch-header p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
 
@@ -921,7 +949,7 @@ nav {
         row-gap: 16px;
     }
 
-  
+
 
 }
 
@@ -956,7 +984,7 @@ nav {
     }
 
 
-  
+
 
 
 
@@ -989,7 +1017,7 @@ nav {
     }
 
     .discover-projects {
- 
+
         row-gap: 20px;
     }
 
@@ -1030,7 +1058,7 @@ nav {
 
     .discover-projects {
         row-gap: 20px;
-        
+
     }
 
 }
@@ -1241,7 +1269,3 @@ input::placeholder {
 .display {
     display: block;
 }
-
-
-
-
