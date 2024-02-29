@@ -450,15 +450,19 @@
              document.querySelector(".mini-nav-language").classList.toggle("display");
             }
             function change_language() {
+            document.querySelector(".language").classList.toggle("right");
             document.querySelector("body").style.direction = "rtl";
             document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
+           
             document.querySelector(".rotated-img").style.margin= " 0 auto 0 0";
             document.querySelector(".blog-img").style.transform = "rotate(90deg)";
             document.querySelector(".blog-img").style.margin = "0";
+          
 
         }
         function change_language_english() {
             document.querySelector("body").style.direction = "ltr";
+            document.querySelector(".language").classList.toggle("left");
         }
     </script>
 </body>

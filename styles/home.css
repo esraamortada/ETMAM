@@ -100,14 +100,14 @@ nav {
     display: none;
     position: absolute;
     top: 60px;
-    right: 180px;
+    right: 50px;
 
     z-index: 2;
 }
 
 .language ul {
     list-style-type: none;
-    width: 170px;
+    width: 300px;
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     background-color: #F4F0EC;
@@ -266,15 +266,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -285,7 +287,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -336,10 +338,12 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -359,18 +363,22 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -394,15 +402,18 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -1198,7 +1209,7 @@ nav {
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     transform: rotate(90deg);
-width: 480px;
+    width: 480px;
     margin-top: -50px;
     margin-bottom: -50px;
 
@@ -1698,7 +1709,7 @@ width: 480px;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     transform: rotate(-90deg);
-width: 480px;
+    width: 480px;
     margin-top: -100px;
     margin-bottom: -100px;
     margin-left: auto;
@@ -1893,7 +1904,8 @@ width: 480px;
         font-size: 32px;
         font-weight: 400;
     }
-/* 
+
+    /* 
     .blog-container .blog-img {
         width: 70%;
     } */
@@ -2204,4 +2216,14 @@ input::placeholder {
 
 .display {
     display: block;
+}
+
+
+.right {
+    position: absolute;
+    right: calc(100% - 350px);
+}
+.left{
+    position: absolute;
+    right: 50px;
 }

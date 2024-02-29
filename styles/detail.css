@@ -99,14 +99,14 @@ nav {
     display: none;
     position: absolute;
     top: 60px;
-    right: 180px;
+    right: 50px;
 
     z-index: 2;
 }
 
 .language ul {
     list-style-type: none;
-    width: 170px;
+    width: 300px;
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     background-color: #F4F0EC;
@@ -1090,4 +1090,13 @@ input::placeholder {
 
 .display {
     display: block;
+}
+
+.right {
+    position: absolute;
+    right: calc(100% - 350px);
+}
+.left{
+    position: absolute;
+    right: 50px;
 }
