@@ -39,7 +39,11 @@
 
                 <div class="mini-nav">
 
+
+
                     <div class="ul">
+
+
                         <div class="mini-nav-logo">
 
                             <div class="logo">
@@ -174,19 +178,25 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
 
-                        <div class="nav-a">
-                            <div class="select" onclick="mini_nav_language()">
-                                <i class="fa-solid fa-chevron-down"></i> English (UK) <img src="images/flag.svg" alt="">
+
+
+                        <div class="lang">
+                            <div class="nav-a">
+                                <div class="select" onclick="mini_nav_language()">
+                                    <i class="fa-solid fa-chevron-down"></i> English (UK) <img src="images/flag.svg"
+                                        alt="">
+
+                                </div>
+                            </div>
+                            <div class="mini-nav-language">
+                                <ul>
+                                    <li> <img src="images/flag.svg" alt=""> English (UK) </li>
+                                    <li> <img src="images/flag.svg" alt=""> Arabic </li>
+
+
+                                </ul>
 
                             </div>
-                        </div>
-                        <div class="mini-nav-language">
-                            <ul>
-                                <li> <img src="images/flag.svg" alt=""> English (UK) </li>
-                                <li > <img src="images/flag.svg" alt=""> Arabic </li>
-
-                            </ul>
-
                         </div>
 
 
@@ -236,7 +246,7 @@
                             </li>
                         </ul>
                         <ul>
-                           
+
                             <li>
                                 <div class="service">
                                     <img src="images/painting and wallpaper work.svg" alt="">
@@ -282,14 +292,15 @@
 
             <div class="language">
                 <ul>
-                    <li onclick="change_language_english()"> <img src="images/flag.svg" alt=""  > English (UK) </li>
-                    <li onclick="change_language()"> <img src="images/flag.svg" alt="" > Arabic </li>
+                    <li onclick="change_language_english()"> <img src="images/flag.svg" alt=""> English (UK) </li>
+                    <li onclick="change_language()"> <img src="images/flag.svg" alt=""> Arabic </li>
 
                 </ul>
 
             </div>
 
         </header>
+
 
  
 
@@ -364,7 +375,7 @@
             </div>
 
 
-            <img src="images/unsplash_OlFHzNjg9kY.svg" alt="">
+            <img src="images/unsplash_OlFHzNjg9kY.svg" alt=""  class="rotated-img">
         </section>
 
      
@@ -518,6 +529,17 @@
 
              document.querySelector(".mini-nav-language").classList.toggle("display");
             }
+            function change_language() {
+            document.querySelector("body").style.direction = "rtl";
+            document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
+            document.querySelector(".rotated-img").style.margin= " 0 auto 0 0";
+            document.querySelector(".blog-img").style.transform = "rotate(90deg)";
+            document.querySelector(".blog-img").style.margin = "0";
+
+        }
+        function change_language_english() {
+            document.querySelector("body").style.direction = "ltr";
+        }
     </script>
 </body>
 
