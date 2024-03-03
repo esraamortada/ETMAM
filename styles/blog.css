@@ -894,7 +894,7 @@ nav {
 /*discoverrrrrrrrrrrrrrrrrrrrr projects*/
 
 .discover-projects {
-    width: 90%;
+    width: 80%;
     margin: auto;
 
     display: flex;
@@ -939,13 +939,14 @@ nav {
     display: flex;
     flex-wrap: wrap;
     row-gap: 40px;
-    /* column-gap: 93px; */
+    column-gap: 93px;
     justify-content: space-around;
+    justify-content: center;
 
 }
 
 .discover-card {
-    width: 460px;
+    width: 450px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     padding: 20px 0px;
     display: flex;
@@ -1209,7 +1210,7 @@ footer i {
 }
 
 .hr2 {
-    width: 80%;
+    width: 70%;
     margin: auto;
     height: 1px;
     background-color: #F4F0EC;
