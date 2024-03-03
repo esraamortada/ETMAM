@@ -425,7 +425,7 @@
 
 
 
-            <img src="images/unsplash_OlFHzNjg9kY.svg" alt="" class="rotated-img">
+            <img src="images/about.svg" alt="" class="rotated-img">
 
 
 
@@ -549,7 +549,7 @@
 
 
                 </div>
-                <img src="images/unsplash_OlFHzNjg9kY.svg" alt="" class="blog-img">
+                <img src="images/about.svg" alt="" class="blog-img">
 
 
 
@@ -647,13 +647,22 @@
         function change_language() {
             document.querySelector(".language").classList.toggle("right");
             document.querySelector("body").style.direction = "rtl";
-            document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
+            // document.querySelector(".rotated-img").style.transform = "rotate(180deg)";
+            // document.querySelector(".rotated-img").style.margin=" 0 auto 0 0"
+                document.querySelector(".rotated-img").style.borderTopLeftRadius="50%";
+                document.querySelector(".rotated-img").style.borderBottomLeftRadius="50%";
+                document.querySelector(".rotated-img").style.borderTopRightRadius="0";
+                document.querySelector(".rotated-img").style.borderBottomRightRadius="0";
             document.querySelector(".Aboutus-header").style.padding = "0";
             
 
 
 
-            document.querySelector(".blog-img").style.transform = "rotate(90deg)";
+            // document.querySelector(".blog-img").style.transform = "rotate(360deg)";
+            document.querySelector(".blog-img").style.borderTopLeftRadius="0";
+                document.querySelector(".blog-img").style.borderBottomLeftRadius="0";
+                document.querySelector(".blog-img").style.borderTopRightRadius="50%";
+                document.querySelector(".blog-img").style.borderBottomRightRadius="50%";
             document.querySelector(".blog-img").style.margin = "0 auto 0 0";
       
         }

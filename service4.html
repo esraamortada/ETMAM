@@ -375,7 +375,7 @@
             </div>
 
 
-            <img src="images/unsplash_OlFHzNjg9kY.svg" alt=""  class="rotated-img">
+            <img src="images/about.svg" alt=""  class="rotated-img">
         </section>
 
      
@@ -532,13 +532,17 @@
             function change_language() {
                 document.querySelector(".language").classList.toggle("right");
             document.querySelector("body").style.direction = "rtl";
-            document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
+            document.querySelector(".rotated-img").style.borderTopLeftRadius="0";
+                document.querySelector(".rotated-img").style.borderBottomLeftRadius="0";
+                document.querySelector(".rotated-img").style.borderTopRightRadius="50%";
+                document.querySelector(".rotated-img").style.borderBottomRightRadius="50%";
+            // document.querySelector(".rotated-img").style.transform = "rotate(-90deg)";
             // document.querySelector(".Aboutus-content").style.padding = "0 100px 0 0";
 
          
             document.querySelector(".rotated-img").style.margin= " 0 auto 0 0";
-            document.querySelector(".blog-img").style.transform = "rotate(90deg)";
-            document.querySelector(".blog-img").style.margin = "0";
+            // document.querySelector(".blog-img").style.transform = "rotate(90deg)";
+            // document.querySelector(".blog-img").style.margin = "0";
             document.querySelector(".language").classList.toggle("right");
             
 

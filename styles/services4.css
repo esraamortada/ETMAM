@@ -584,13 +584,13 @@ nav {
 
 
 .Aboutus img {
-    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    transform: rotate(90deg);
-    width: 480px;
+    /* transform: rotate(90deg);
+    width: 480px; */
     transition: all 1s ease-in-out;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    /* margin-top: -50px;
+    margin-bottom: -50px; */
 
 
 }
@@ -661,7 +661,7 @@ nav {
 
     .Aboutus-content {
         width: 80%;
-        padding: 50px 0 0 0;
+        /* padding: 50px 0 0 0; */
         margin: 0 auto;
     }
 
@@ -674,7 +674,7 @@ nav {
     }
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }
@@ -687,7 +687,7 @@ nav {
     .Aboutus {
         flex-direction: column;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -696,7 +696,7 @@ nav {
 
     .Aboutus-content {
         width: 80%;
-        padding: 50px 0 0 0;
+        /* padding: 50px 0 0 0; */
         margin: auto;
     }
 
@@ -712,7 +712,7 @@ nav {
 
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }
@@ -727,7 +727,7 @@ nav {
     .Aboutus {
         flex-direction: column;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -736,7 +736,7 @@ nav {
 
     .Aboutus-content {
         width: 80%;
-        padding: 50px 0 0 0;
+        /* padding: 50px 0 0 0; */
         margin: auto;
     }
 
@@ -755,7 +755,7 @@ nav {
 
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }
@@ -782,7 +782,7 @@ nav {
 
     .Aboutus-content {
         width: 80%;
-        padding: 50px 0 0 0;
+        /* padding: 50px 0 0 0; */
 
         margin: auto;
     }

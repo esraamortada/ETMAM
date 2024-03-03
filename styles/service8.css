@@ -1077,13 +1077,13 @@ nav {
 
 
 .Aboutus img {
-    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    transform: rotate(90deg);
-    width: 480px;
+    /* transform: rotate(90deg);
+    width: 480px; */
     transition: all 1s ease-in-out;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    /* margin-top: -50px;
+    margin-bottom: -50px; */
 
 
 }
@@ -1167,7 +1167,7 @@ nav {
     }
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }
@@ -1205,7 +1205,7 @@ nav {
 
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }
@@ -1248,7 +1248,7 @@ nav {
 
 
     .Aboutus img {
-        /* width: 60%; */
+        width: 60%;
         height: auto;
         margin-left: auto;
     }

@@ -1083,11 +1083,11 @@ nav {
 .Aboutus img {
 
     border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    transform: rotate(90deg);
-    width: 480px;
+    border-bottom-right-radius: 50%;
+    /* transform: rotate(90deg); */
+    /* width: 480px;
     margin-top: -50px;
-    margin-bottom: -50px;
+    margin-bottom: -50px; */
 
 
 

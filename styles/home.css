@@ -1178,6 +1178,7 @@ nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 50px 0px;
 }
 
 
@@ -1207,11 +1208,11 @@ nav {
 .Aboutus1 img {
 
     border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    transform: rotate(90deg);
-    width: 480px;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    border-bottom-right-radius: 50%;
+    /* transform: rotate(90deg); */
+    /* width: 480px; */
+    /* margin-top: -50px;
+    margin-bottom: -50px; */
 
 
 
@@ -1706,13 +1707,13 @@ nav {
 
 .blog-container .blog-img {
 
-    border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    transform: rotate(-90deg);
+    border-bottom-left-radius: 50%;
+    /* transform: rotate(-90deg);
     width: 480px;
     margin-top: -100px;
     margin-bottom: -100px;
-    margin-left: auto;
+    margin-left: auto; */
 
 
 
@@ -1866,7 +1867,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .blog-container {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         row-gap: 30px;
         /* padding-bottom: 50px; */
 
@@ -2228,7 +2229,8 @@ input::placeholder {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }
