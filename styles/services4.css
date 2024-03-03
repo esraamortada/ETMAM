@@ -1079,7 +1079,7 @@ footer {
 
 .social-icons {
     display: flex;
-
+align-items: center;
     column-gap: 16px;
 
 }
@@ -1198,6 +1198,7 @@ input::placeholder {
     .social-icons {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         row-gap: 16px;
     }
 
@@ -1223,6 +1224,7 @@ input::placeholder {
     .social-icons {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         row-gap: 16px;
     }
 
@@ -1248,6 +1250,7 @@ input::placeholder {
     .social-icons {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         row-gap: 16px;
     }
 
