@@ -45,8 +45,14 @@ a {
     text-decoration: none;
     color: #F4F0EC;
     font-size: 20px;
+    transition: all 0.5s ease-in;
 }
 
+a:hover {
+    color: #FDEBC5;
+    font-weight: 600;
+   
+}
 .navbar {
     width: 80%;
     margin: auto;

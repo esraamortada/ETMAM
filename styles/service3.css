@@ -50,6 +50,13 @@ a {
     text-decoration: none;
     color: #F4F0EC;
     font-size: 20px;
+    transition: all 0.5s ease-in;
+}
+
+a:hover {
+    color: #FDEBC5;
+    font-weight: 600;
+
 }
 
 .navbar {
@@ -1060,20 +1067,21 @@ nav {
 
 
 .Aboutus-content {
-    width: 50%;
+    width: 60%;
 
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     align-items: center;
     justify-content: center;
-    padding: 0px 100px;
+    padding: 0px 150px;
 }
 
 
 .Aboutus img {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    width: 35%;
     /* transform: rotate(90deg);
     width: 480px; */
     transition: all 1s ease-in-out;
