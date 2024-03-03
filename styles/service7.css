@@ -634,7 +634,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -686,7 +686,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -732,7 +732,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -781,7 +781,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -1077,7 +1077,7 @@ footer {
 
 .social-icons {
     display: flex;
-align-items: center;
+    align-items: center;
     column-gap: 16px;
 
 }
@@ -1279,7 +1279,8 @@ input::placeholder {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }

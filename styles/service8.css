@@ -857,7 +857,7 @@ nav {
 @media screen and (max-width: 1200px) and (min-width:992px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -908,7 +908,7 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -953,7 +953,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -1001,7 +1001,7 @@ nav {
 @media screen and (max-width: 600px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;

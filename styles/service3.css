@@ -265,15 +265,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -284,7 +286,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -335,9 +337,11 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
+
     .mini-nav {
         display: none;
     }
@@ -358,17 +362,21 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
+
     .mini-nav {
         display: none;
     }
@@ -392,14 +400,17 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
+
     .mini-nav {
         display: none;
     }
@@ -611,7 +622,7 @@ nav {
 @media screen and (max-width: 1200px) and (min-width:992px) {
 
     .our-services {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -656,7 +667,7 @@ nav {
 
 
     .our-services {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 50px;
 
     }
@@ -694,7 +705,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .our-services {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 50px;
 
     }
@@ -733,7 +744,7 @@ nav {
 
 @media screen and (max-width: 600px) {
     .our-services {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -841,7 +852,7 @@ nav {
 @media screen and (max-width: 1200px) and (min-width:992px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -849,7 +860,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -892,7 +903,7 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -900,7 +911,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -937,7 +948,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -945,7 +956,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -985,7 +996,7 @@ nav {
 @media screen and (max-width: 600px) {
 
     .our-Approatch {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         row-gap: 30px;
         padding: 50px 0;
@@ -993,7 +1004,7 @@ nav {
     }
 
     .our-Approatch2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
         padding: 50px 0;
     }
@@ -1223,7 +1234,8 @@ nav {
     .about-content {
         width: 100%;
     }
-    .Aboutus p{
+
+    .Aboutus p {
         font-size: 13px;
     }
 
@@ -1689,7 +1701,8 @@ input::placeholder {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }

@@ -1147,7 +1147,7 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
 
     .Aboutus {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
 
     }
@@ -1183,7 +1183,7 @@ nav {
 
 
     .Aboutus {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
 
     }
@@ -1221,7 +1221,7 @@ nav {
 
 @media screen and (max-width: 600px) {
     .Aboutus {
-        flex-direction: column-reverse;
+        flex-direction: column;
         row-gap: 30px;
 
 
@@ -1365,7 +1365,7 @@ nav {
 @media screen and (max-width: 1200px) and (min-width:992px) {
 
     .our-approach2-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -1439,7 +1439,7 @@ nav {
 
 
     .our-approach2-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -1509,7 +1509,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .our-approach2-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -1580,7 +1580,7 @@ nav {
 
 @media screen and (max-width: 600px) {
     .our-approach2-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         row-gap: 50px;
 
@@ -1744,7 +1744,7 @@ footer {
 
 .social-icons {
     display: flex;
-align-items: center;
+    align-items: center;
     column-gap: 16px;
 
 }
@@ -1944,7 +1944,8 @@ input::placeholder {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }

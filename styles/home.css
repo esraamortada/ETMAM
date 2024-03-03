@@ -959,7 +959,7 @@ nav {
     }
 
     .services-header p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .services-img::before {
@@ -1222,7 +1222,7 @@ nav {
 
 
     .Aboutus1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0px;
 
@@ -1262,7 +1262,7 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
 
     .Aboutus1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0px;
 
@@ -1304,7 +1304,7 @@ nav {
 
 
     .Aboutus1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0px;
 
@@ -1346,7 +1346,7 @@ nav {
 
 @media screen and (max-width: 600px) {
     .Aboutus1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
         padding: 50px 0px;
 
@@ -1368,7 +1368,7 @@ nav {
 
     .Aboutus1 .Aboutus-header p {
         line-height: 26px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
 
@@ -1729,9 +1729,9 @@ nav {
 
 
     .blog-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -1797,9 +1797,9 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
 
     .blog-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -1866,9 +1866,9 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
 
     .blog-container {
-        flex-direction: column;
+        flex-direction:column-reverse;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -1936,9 +1936,9 @@ nav {
 
 @media screen and (max-width: 600px) {
     .blog-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
 
     }
@@ -1966,7 +1966,7 @@ nav {
 
     .Aboutus-header p {
         line-height: 26px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .Aboutus-header h2 {
@@ -1977,6 +1977,7 @@ nav {
 
     .blog-container .blog-img {
         width: 70%;
+        margin: 0 0 0 auto;
     }
 
     .card {
