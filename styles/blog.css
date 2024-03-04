@@ -9,15 +9,16 @@ main {
     flex-direction: column;
     position: relative;
     z-index: 1;
-   
+
 
 }
 
-body{
+body {
     font-family: "PT Serif", serif;
     position: relative;
     z-index: 1;
 }
+
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
 
@@ -51,7 +52,7 @@ a {
 a:hover {
     color: #FDEBC5;
     font-weight: 600;
-   
+
 }
 
 .navbar {
@@ -138,8 +139,10 @@ nav {
     display: none;
     position: absolute;
     top: 70px;
-    right: 30%;
+    left: calc(100%-70%);
     z-index: 2;
+    width: 70%;
+    height: 400px;
 }
 
 .nav-services ul {
@@ -153,7 +156,12 @@ nav {
     flex-direction: column;
 
     border-radius: 6px;
-    row-gap: 20px;
+    row-gap: 30px;
+}
+
+.nav-services ul img {
+    width: 48px;
+    height: 30px;
 }
 
 .service {
@@ -165,16 +173,23 @@ nav {
 .ul-container {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    width: 700px;
+    padding: 40px;
+    width: 100%;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
-    background-color: #F4F0EC;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border-radius: 4px;
 }
 
 .service a {
     color: #293336;
     text-decoration: none;
+
+}
+
+.service a:hover {
+    color: #4F8280;
+
+    font-weight: 400;
 }
 
 
@@ -267,15 +282,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -286,7 +303,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -337,10 +354,12 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -361,18 +380,22 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -397,15 +420,18 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -428,7 +454,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #00000040;
-    
+
     position: absolute;
     z-index: -1;
 
@@ -501,14 +527,15 @@ nav {
         content: " ";
         width: 250px;
         height: 380px;
-   
-   
+
+
         position: absolute;
         top: -30px;
         z-index: -1;
 
 
     }
+
     .header {
         height: 70vh;
     }
@@ -537,14 +564,15 @@ nav {
         content: " ";
         width: 200px;
         height: 300px;
-   
-   
+
+
         position: absolute;
         top: -50px;
         z-index: -1;
 
 
     }
+
     .header {
         height: 70vh;
     }
@@ -622,6 +650,7 @@ nav {
     }
 
 }
+
 /*our servicesssssssssssssssssssssss*/
 .our-services {
     width: 80%;
@@ -641,6 +670,7 @@ nav {
     flex-direction: column;
     row-gap: 20px;
     padding: 0px 80px;
+    color: #A4A4A4;
 }
 
 .services-header h2 {
@@ -650,15 +680,17 @@ nav {
 
 }
 
-.services-header p:first-of-type {
+.services-header .first {
     line-height: 24px;
     color: #6B6B6B;
     font-size: 24px;
 
+
 }
 
-.services-header p:last-of-type {
+.services-header .date p {
     color: #A4A4A4;
+    font-size: l6px;
     line-height: 24px;
 
 }
@@ -940,20 +972,22 @@ nav {
     display: flex;
     flex-wrap: wrap;
     row-gap: 40px;
-    column-gap: 50px;
+    /* column-gap: 50px; */
     /* justify-content: space-around; */
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
 .discover-card {
-    width: 450px;
-    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    width: 32%;
+    box-shadow: 0.5626646876335144px 0.5626646876335144px 2.2506587505340576px 0px #00000040;
+
     padding: 20px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
+    flex-shrink: 0;
     border-radius: 10px;
 
 }
@@ -1002,7 +1036,13 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
+
     column-gap: 15px;
+}
+
+.date p {
+
+    font-size: 16px;
 }
 
 .discover-card button {
@@ -1018,7 +1058,7 @@ nav {
     justify-content: center;
 }
 
-@media screen and (max-width: 1200px) and (min-width:992px) {
+@media screen and (max-width: 1500px) and (min-width:992px) {
     .discover-projects-container {
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -1028,6 +1068,7 @@ nav {
     }
 
     .discover-card {
+        width: 400px;
 
         flex-shrink: 0;
     }
@@ -1063,6 +1104,7 @@ nav {
     }
 
     .discover-card {
+        width: 400px;
 
         flex-shrink: 0;
     }
@@ -1099,6 +1141,7 @@ nav {
     }
 
     .discover-card {
+        width: 400px;
 
         flex-shrink: 0;
     }
@@ -1381,11 +1424,13 @@ input::placeholder {
 .display {
     display: block;
 }
+
 .right {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }
