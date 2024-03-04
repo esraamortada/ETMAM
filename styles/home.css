@@ -144,8 +144,9 @@ nav {
     display: none;
     position: absolute;
     top: 70px;
-    right: 30%;
+    left: calc(100%-70%);
     z-index: 2;
+    width: 60%;
 }
 
 .nav-services ul {
@@ -171,7 +172,7 @@ nav {
 .ul-container {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 40px;
     width: 100%;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     background-color: #ffffff;
@@ -513,14 +514,15 @@ nav {
         content: " ";
         width: 250px;
         height: 380px;
-   
-   
+
+
         position: absolute;
         top: -30px;
         z-index: -1;
 
 
     }
+
     .header {
         height: 70vh;
     }
@@ -549,14 +551,15 @@ nav {
         content: " ";
         width: 200px;
         height: 300px;
-   
-   
+
+
         position: absolute;
         top: -50px;
         z-index: -1;
 
 
     }
+
     .header {
         height: 70vh;
     }
@@ -643,7 +646,7 @@ nav {
 
 .our-services {
 
-   
+
     width: 80%;
     margin: auto;
     display: flex;
@@ -881,9 +884,10 @@ nav {
         overflow-x: scroll;
         width: 100%;
         padding: 30px;
-       
+
 
     }
+
     .row {
         justify-content: flex-start;
     }
@@ -1446,16 +1450,17 @@ nav {
 }
 
 .discover-projects-container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
-    column-gap: 93px;
-    justify-content: center;
+    justify-content: space-around;
+    /* column-gap: 93px; */
+    /* justify-content: center; */
 
 }
 
 .discover-card {
-    width: 450px;
+    width: 400px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     padding: 20px 0px;
     display: flex;
@@ -1498,9 +1503,9 @@ nav {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) and (min-width:992px) {
+@media screen and (max-width: 1570px) and (min-width:992px) {
     .discover-projects-container {
-
+justify-content: flex-start;
         overflow-x: scroll;
         column-gap: 20px;
         padding: 30px 0px;
@@ -1534,7 +1539,7 @@ nav {
 @media screen and (max-width: 992px) and (min-width:786px) {
     .discover-projects-container {
 
-        overflow-x: scroll;
+        overflow-x: scroll;justify-content: flex-start;
         column-gap: 20px;
         padding: 30px 0px;
 
@@ -1569,7 +1574,7 @@ nav {
 @media screen and (max-width: 786px) and (min-width:600px) {
     .discover-projects-container {
 
-        overflow-x: scroll;
+        overflow-x: scroll;justify-content: flex-start;
         column-gap: 20px;
         padding: 30px 0px;
 
@@ -1605,6 +1610,7 @@ nav {
     .discover-projects-container {
 
         overflow-x: scroll;
+        justify-content: flex-start;
         column-gap: 20px;
         padding: 30px 0px;
 
@@ -1666,8 +1672,8 @@ nav {
 }
 
 .card-container .card img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     border-radius: 5px;
 }
 
@@ -1678,7 +1684,8 @@ nav {
 }
 
 .card {
-    width: 500px;
+    width: 515px;
+    height: 152px;
     background-color: #FEFDFD;
     padding: 20px;
     border-radius: 10px;
@@ -2010,11 +2017,13 @@ nav {
     .card {
         width: 100%;
         margin: 0 auto;
+      height: auto;
+      padding: 15px 10px;
     }
 
-    .card img {
+    /* .card img {
         width: 70px;
-    }
+    } */
 
     .text {
         width: 100%;
@@ -2026,6 +2035,10 @@ nav {
         margin: 0 auto;
         padding-bottom: 50px;
 
+    }
+    .card-container .card img {
+        width: 60px;
+        height: 60px;
     }
 
 }
