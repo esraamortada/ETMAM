@@ -483,13 +483,50 @@ nav {
     row-gap: 30px;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    text-align: center;
+    width: 60%;
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.main-header::before {
+    content: " ";
+    width: 324px;
+    height: 501px;
+    opacity: 0.5;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    background-color: #95BDBC;
+    position: absolute;
+    /* top: -210px; */
+    z-index: -1;
+
 
 }
 
 
-@media screen and (max-width: 1200px) and (min-width:992px) {}
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+
+    .main-header::before {
+        content: " ";
+        width: 250px;
+        height: 380px;
+   
+   
+        position: absolute;
+        top: -30px;
+        z-index: -1;
+
+
+    }
+    .header {
+        height: 70vh;
+    }
+
+
+}
 
 @media screen and (max-width: 992px) and (min-width:786px) {
 
@@ -508,8 +545,19 @@ nav {
         width: 190px;
     }
 
-    .header {
+    .main-header::before {
+        content: " ";
+        width: 200px;
+        height: 300px;
+   
+   
+        position: absolute;
+        top: -50px;
+        z-index: -1;
 
+
+    }
+    .header {
         height: 70vh;
     }
 
@@ -532,10 +580,23 @@ nav {
         width: 190px;
     }
 
-    .header {
+    .main-header::before {
+        content: " ";
+        width: 200px;
+        height: 300px;
 
+
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+
+
+    }
+
+    .header {
         height: 70vh;
     }
+
 
 }
 
@@ -546,22 +607,33 @@ nav {
 
     }
 
-    .header {
-
-        height: 70vh;
-    }
-
     .header h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
-
 
     .header-btn {
         font-size: 12px;
         width: 190px;
     }
-}
 
+    .main-header::before {
+        content: " ";
+        width: 200px;
+        height: 300px;
+
+
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+
+
+    }
+
+    .header {
+        height: 70vh;
+    }
+
+}
 /*our approachhhhhhhhhhhhhhhhhhhh*/
 
 .our-Approatch {
