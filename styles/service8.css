@@ -1444,8 +1444,11 @@ nav {
     column-gap: 16px;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease-in-out;
 }
-
+.discover-header button:hover{
+    transform: scale(1.05);
+}
 .discover-header h2 {
     text-align: center;
     color: #4F8280;
