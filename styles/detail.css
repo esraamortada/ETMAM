@@ -10,7 +10,7 @@ main {
     row-gap: 50px;
     position: relative;
     z-index: 1;
-   
+
 
 }
 
@@ -56,8 +56,9 @@ a {
 a:hover {
     color: #FDEBC5;
     font-weight: 600;
-   
+
 }
+
 .navbar {
     width: 80%;
     margin: auto;
@@ -271,15 +272,17 @@ nav {
     margin-top: auto;
     /*it didnot work*/
 }
-.mini-nav .service
-{
+
+.mini-nav .service {
     flex-direction: row-reverse;
 
-   
+
 }
-.mini-nav .service a{
+
+.mini-nav .service a {
     font-size: 14px;
 }
+
 .mini-nav-language {
     display: none;
 }
@@ -290,7 +293,7 @@ nav {
     flex-direction: column;
     row-gap: 16px;
     padding: 20px 0px;
-   
+
 }
 
 .mini-nav-language ul li {
@@ -341,10 +344,12 @@ nav {
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -364,18 +369,22 @@ nav {
     .select {
         display: none;
     }
+
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -399,15 +408,18 @@ nav {
     .language {
         display: none !important;
     }
+
     a {
         text-decoration: none;
         color: #293336;
         font-size: 20px;
     }
-    .nav-services{
+
+    .nav-services {
         display: none !important;
     }
-    .mini-nav{
+
+    .mini-nav {
         display: none;
     }
 
@@ -415,7 +427,7 @@ nav {
 
 /*our servicesssssssssssssssssssssss*/
 .our-services {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -450,6 +462,7 @@ nav {
     align-items: center;
     width: 100%;
     column-gap: 15px;
+
 }
 
 .services-header {
@@ -460,9 +473,10 @@ nav {
 
 
     row-gap: 20px;
-   
+
 }
-.service-head-text{
+
+.service-head-text {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -477,13 +491,18 @@ nav {
 
 .services-header p:first-of-type {
     line-height: 24px;
-    color: #6B6B6B;
-    font-size: 24px;
+    color: #A4A4A4;
+    font-size: 16px;
 
 }
 
 
-
+.hr3 {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: #E8ECEE;
+}
 
 
 
@@ -502,7 +521,7 @@ nav {
 
     .services-header {
         width: 100%;
-    
+
     }
 
 
@@ -537,7 +556,7 @@ nav {
 
     .services-header {
         width: 100%;
-      
+
     }
 
     .services-img {
@@ -582,8 +601,8 @@ nav {
 
     .services-header {
         width: 100%;
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -629,8 +648,8 @@ nav {
 
     .services-header {
         width: 100%;
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     .services-img {
@@ -662,7 +681,7 @@ nav {
 
 /*detailsssssssssssssssssssssssssssssssssssssssssssssssss*/
 .details {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     color: #A4A4A4;
     display: flex;
@@ -703,7 +722,22 @@ nav {
     margin-left: 20px;
 }
 
-@media screen and (max-width: 1200px) and (min-width:992px) {}
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .details {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .detail-col1 {
+        width: 100%;
+    }
+
+    .detail-col2 {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 992px) and (min-width:786px) {
 
@@ -750,16 +784,32 @@ nav {
 
 
 .articles {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
+.card-with-head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 515px;
+}
+
+.card-with-head h4 {
+    color: #B1B2B4;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
 .card {
-    width: 40%;
+
+    width: 100%;
     background-color: #FEFDFD;
     padding: 20px;
+    height: 152px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -791,7 +841,7 @@ nav {
 
 }
 
-@media screen and (max-width: 1200px) and (min-width:992px) {
+@media screen and (max-width: 1300px) and (min-width:992px) {
 
     .articles {
         display: flex;
@@ -799,10 +849,15 @@ nav {
         row-gap: 30px;
     }
 
-    .card {
+    .card-with-head {
         width: 70%;
         margin: 0 auto;
     }
+
+    .card {
+        width: 100%;
+    }
+
 
     .card img {
         width: 70px;
@@ -822,9 +877,13 @@ nav {
         row-gap: 30px;
     }
 
-    .card {
+    .card-with-head {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .card img {
@@ -848,9 +907,13 @@ nav {
         row-gap: 30px;
     }
 
-    .card {
+    .card-with-head {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .card img {
@@ -872,7 +935,7 @@ nav {
         row-gap: 30px;
     }
 
-    .card {
+    .card-with-head {
         width: 100%;
         margin: 0 auto;
     }
@@ -1106,7 +1169,8 @@ input::placeholder {
     position: absolute;
     right: calc(100% - 350px);
 }
-.left{
+
+.left {
     position: absolute;
     right: 50px;
 }

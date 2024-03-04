@@ -1743,14 +1743,14 @@ nav {
     border-top-left-radius: 500px;
     border-bottom-left-radius: 500px;
     /* width: 40%; */
-    width: 673px;
+
 
     position: absolute;
     right: 0px;
     /* transform: rotate(-90deg);
 
     margin-top: -100px;
-    margin-bottom: -100px;
+  
     margin-left: auto; */
 
 
@@ -1774,9 +1774,11 @@ nav {
 
 
     }
+
     .blog {
         width: 100%;
     }
+
     .card:first-child {
         margin-left: 0px;
     }
@@ -1847,6 +1849,7 @@ nav {
 
 
     }
+
     .blog {
         width: 100%;
     }
@@ -1922,6 +1925,7 @@ nav {
 
 
     }
+
     .blog {
         width: 100%;
     }
@@ -2088,7 +2092,7 @@ footer {
     background-color: #5F5F5F;
     color: #F4F0EC;
     padding: 70px 0px;
-    
+
 
 }
 
