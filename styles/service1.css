@@ -481,8 +481,9 @@ nav {
     flex-direction: column;
     row-gap: 30px;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    width: 60%;
+    width: 50%;
 
     position: relative;
     z-index: 1;

@@ -1017,6 +1017,7 @@ nav {
     position: relative;
     z-index: 2;
 
+
 }
 
 .after-services::before {
@@ -1032,6 +1033,7 @@ nav {
 
 .after-services img {
     width: 100%;
+    border-bottom-left-radius: 500px;
 }
 
 .hr {

@@ -496,7 +496,8 @@ nav {
     row-gap: 30px;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    text-align: center;
+    width: 50%;
 
     position: relative;
     z-index: 1;

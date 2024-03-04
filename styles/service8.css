@@ -500,8 +500,9 @@ nav {
     flex-direction: column;
     row-gap: 30px;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    width: 60%;
+    width: 50%;
 
     position: relative;
     z-index: 1;
@@ -1414,7 +1415,7 @@ nav {
 /*discoverrrrrrrrrrrrrrrrrrrrr projects*/
 
 .discover-projects {
-    width: 90%;
+    width: 80%;
     margin: auto;
 
     display: flex;
@@ -1426,10 +1427,10 @@ nav {
 
 .discover-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 150px;
     width: 70%;
-    margin: auto;
+    margin-left: auto;
 }
 
 .discover-header button {
@@ -1455,21 +1456,25 @@ nav {
 }
 
 .discover-projects-container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
-    column-gap: 93px;
+    /* column-gap: 93px; */
+    justify-content: space-between;
 
 }
 
 .discover-card {
-    width: 450px;
-    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
-    padding: 20px 0px;
+    width: 32%;
+    
+    box-shadow: 0.5626646876335144px 0.5626646876335144px 2.2506587505340576px 0px #00000040;
+
+    padding: 20px  0px 30px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
+    border-radius: 10px;
 
 }
 
