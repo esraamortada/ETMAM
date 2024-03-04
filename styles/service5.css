@@ -21,6 +21,8 @@ html {
     font-family: "PT Serif", serif;
     position: relative;
     z-index: 1;
+    text-transform: capitalize;
+
 }
 
 
@@ -476,6 +478,7 @@ nav {
 .header h1 {
     font-size: 60px;
     font-weight: 400;
+    text-transform: uppercase;
 
 
 
@@ -895,7 +898,8 @@ nav {
 
 
     display: flex;
-    background-color: #F4F0EC;
+    background: #CADEDD80;
+
     justify-content: space-between;
     padding: 50px 0px;
 }
@@ -904,20 +908,21 @@ nav {
 
 
 .Aboutus-content {
-    width: 50%;
+    width: 70%;
     /* padding: 0px 60px; */
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    margin: 0px 100px;
+    margin: 0px 10%;
 }
 
 
 .Aboutus img {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    width: 40%;
     /* transform: rotate(90deg);
   width: 480px; */
     transition: all 1s ease-in-out;

@@ -16,6 +16,7 @@ main {
 
 body,
 html {
+    text-transform: capitalize;
 
     overflow-x: hidden;
     font-family: "PT Serif", serif;
@@ -480,6 +481,7 @@ nav {
 
 .header h1 {
     font-size: 60px;
+    text-transform: uppercase;
     font-weight: 400;
 
 
@@ -1158,20 +1160,21 @@ nav {
 
 
 .Aboutus-content {
-    width: 50%;
+    width: 70%;
     /* padding: 0px 60px; */
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     align-items: center;
     justify-content: center;
-    margin:  0px 100px;
+    margin:  0px 10%;
 }
 
 
 .Aboutus img {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    width: 40%;
     /* transform: rotate(90deg);
     width: 480px; */
     transition: all 1s ease-in-out;
@@ -1201,7 +1204,7 @@ nav {
 .li {
     display: flex;
     column-gap: 20px;
-    width: 95%;
+    width: 100%;
     text-align: left;
 }
 

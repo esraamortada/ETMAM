@@ -17,6 +17,8 @@ body{
     font-family: "PT Serif", serif;
     position: relative;
     z-index: 1;
+    text-transform: capitalize;
+
 }
 
 /*navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/

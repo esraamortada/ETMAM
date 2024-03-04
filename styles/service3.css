@@ -21,6 +21,8 @@ html {
     font-family: "PT Serif", serif;
     position: relative;
     z-index: 1;
+    text-transform: capitalize;
+
 }
 
 
@@ -476,6 +478,7 @@ nav {
 .header h1 {
     font-size: 60px;
     font-weight: 400;
+    text-transform: uppercase;
 
 
 
