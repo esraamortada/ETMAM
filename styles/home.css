@@ -144,9 +144,9 @@ nav {
     display: none;
     position: absolute;
     top: 70px;
-    left: calc(100%-70%);
+
     z-index: 2;
-    width: 70%;
+    width: 80%;
     height: 400px;
 }
 
@@ -161,13 +161,14 @@ nav {
     flex-direction: column;
 
     border-radius: 6px;
-    row-gap: 30px;
+    row-gap: 48px;
 }
 
 .nav-services ul img {
     width: 48px;
-    height: 30px;
+    height: 48px;
 }
+
 
 .service {
     display: flex;
@@ -188,6 +189,7 @@ nav {
 .service a {
     color: #293336;
     text-decoration: none;
+    font-size: 24px;
 
 }
 
@@ -1586,7 +1588,7 @@ nav {
 
     }
 
-   
+
     .discover-card {
         width: 400px;
         flex-shrink: 0;
@@ -1623,7 +1625,7 @@ nav {
 
     }
 
-   
+
     .discover-card {
         width: 400px;
         flex-shrink: 0;
