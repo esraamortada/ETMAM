@@ -8,7 +8,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    background-color: #FEFDFD;
+    background-color: #ffffff;
     position: relative;
     z-index: 1;
 
@@ -172,10 +172,10 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    width: 700px;
+    width: 100%;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
-    background-color: #F4F0EC;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border-radius: 4px;
 }
 
 .service a {
@@ -482,7 +482,8 @@ nav {
     row-gap: 30px;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
+    letter-spacing: 3px;
     position: relative;
     z-index: 1;
 
@@ -644,13 +645,20 @@ nav {
 }
 
 /*our servicesssssssssssssssssssssss*/
-.our-services {
+.ourservices-container {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 50px 0px;
+}
+
+.our-services {
+
+    background-color: #FEFDFD;
+    width: 100%;
 }
 
 .row {
@@ -1186,6 +1194,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 50px 0px;
+    background-color: #FEFDFD;
 }
 
 
@@ -1216,7 +1225,7 @@ nav {
 
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-   width: 40%;
+    width: 40%;
 
     /* transform: rotate(90deg); */
     /* width: 480px; */
@@ -1406,6 +1415,7 @@ nav {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+    padding: 50px 0px;
 }
 
 .discover-header {
@@ -1724,7 +1734,7 @@ nav {
 
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-   width: 40%;
+    width: 40%;
     /* transform: rotate(-90deg);
 
     margin-top: -100px;
