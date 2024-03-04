@@ -648,14 +648,28 @@ nav {
 
 }
 /*afterrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
-.after img {
+.after::before {
+    content: "";
     width: 100%;
-
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 500px;
 
 }
 
+.after img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 500px;
+}
+
+
+
 .after {
     position: relative;
+    width: 100%;
 }
 
 .after p {
@@ -664,6 +678,7 @@ nav {
     font-size: 70px;
     font-weight: 400;
     color: #F4F0EC;
+    z-index: 2;
 
 
 
