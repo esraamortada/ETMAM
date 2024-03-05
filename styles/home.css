@@ -22,6 +22,7 @@ html {
     position: relative;
     z-index: 1;
     text-transform: capitalize;
+   
 
 }
 
@@ -40,6 +41,8 @@ header {
     color: #F4F0EC;
     position: relative;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+  
+
 
 }
 
@@ -109,21 +112,22 @@ nav {
     display: none;
     position: absolute;
     top: 60px;
-    right: 50px;
+    right: 10%;
 
     z-index: 2;
 }
 
 .language ul {
     list-style-type: none;
-    width: 300px;
+    width: 180px;
+   
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
-    background-color: #F4F0EC;
+    background-color: #ffffff;
     color: #293336;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 5px;
     row-gap: 16px;
 }
 
@@ -471,6 +475,7 @@ nav {
     color: #FFFFFF;
     background-size: cover;
     opacity: 0.8;
+
 
 }
 
