@@ -952,7 +952,7 @@ nav {
 .li {
     display: flex;
     column-gap: 20px;
-    width: 95%;
+    width: 100%;
     text-align: left;
 }
 
