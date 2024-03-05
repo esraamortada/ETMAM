@@ -477,7 +477,7 @@ nav {
 .header h1 {
     font-size: 60px;
     font-weight: 400;
- 
+
     text-transform: uppercase;
 
     text-align: center;
@@ -1671,7 +1671,7 @@ nav {
     }
 
     .discover-header h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .discover-header {
@@ -1707,7 +1707,8 @@ nav {
     margin: auto;
 
 }
-.blog .discover-header{
+
+.blog .discover-header {
     margin-right: 10%;
     width: 50%;
 }
@@ -1723,7 +1724,7 @@ nav {
     justify-content: center;
     /* align-items: center; */
     row-gap: 10px;
-    margin: 0 10%;
+    margin: 0  0 0 10%;
     width: 60%;
 }
 
@@ -1799,12 +1800,12 @@ nav {
     width: 40%;
 
 
-   
+
     /* transform: rotate(-90deg);
 
     margin-top: -100px;
     */
-  
+
     /* margin-left: auto;  */
 
 
@@ -1890,6 +1891,9 @@ nav {
         padding-bottom: 50px;
 
     }
+    .blog .discover-header {
+        margin: 0 auto;
+    }
 
 }
 
@@ -1967,6 +1971,9 @@ nav {
         padding-bottom: 50px;
 
     }
+    .blog .discover-header {
+        margin: 0 auto;
+    }
 
 }
 
@@ -2042,6 +2049,11 @@ nav {
         padding-bottom: 50px;
 
     }
+    .blog .discover-header {
+        margin: 0 auto;
+    }
+
+
 
 }
 
@@ -2126,6 +2138,9 @@ nav {
         height: 60px;
     }
 
+    .blog .discover-header {
+        margin: 0 auto;
+    }
 }
 
 
@@ -2155,6 +2170,12 @@ footer {
     align-items: center;
 
     column-gap: 16px;
+
+}
+
+.social-icons .circle {
+    width: 42px;
+    height: 42px;
 
 }
 

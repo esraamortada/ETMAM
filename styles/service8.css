@@ -1667,7 +1667,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 38px;
-    background-color: #6B6B6B;
+    background-color: #5F5F5F;
     color: #F4F0EC;
     padding: 70px 0px;
 
@@ -1679,6 +1679,11 @@ align-items: center;
     column-gap: 16px;
 
 }
+.social-icons .circle{
+    width: 42px;
+    height: 42px;
+    
+    }
 
 .icons-container {
 
