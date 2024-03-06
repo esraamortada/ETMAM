@@ -536,15 +536,15 @@ nav {
 
 
         position: absolute;
-        top: -30px;
+        /* top: -30px; */
         z-index: -1;
 
 
     }
 
-    .header {
+    /* .header {
         height: 70vh;
-    }
+    } */
 
 
 }
@@ -573,15 +573,15 @@ nav {
 
 
         position: absolute;
-        top: -50px;
+        /* top: -50px; */
         z-index: -1;
 
 
     }
 
-    .header {
+    /* .header {
         height: 70vh;
-    }
+    } */
 
 }
 
@@ -609,15 +609,15 @@ nav {
 
 
         position: absolute;
-        top: -50px;
+        /* top: -50px; */
         z-index: -1;
 
 
     }
 
-    .header {
+    /* .header {
         height: 70vh;
-    }
+    } */
 
 
 }
@@ -645,15 +645,15 @@ nav {
 
 
         position: absolute;
-        top: -50px;
+        /* top: -50px; */
         z-index: -1;
 
 
     }
 
-    .header {
+    /* .header {
         height: 70vh;
-    }
+    } */
 
 }
 
