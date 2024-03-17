@@ -317,35 +317,35 @@
                     <p>Let’s build your best interior design now</p>
                 </div>
 
-                <form>
+                <form id="contactForm">
                     <div class="input2">
-                        <label for="">Name</label>
-                        <input type="text" placeholder="Full Name">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Full Name" id="name" required>
 
                     </div>
                     <div class="input2">
                         <label for="">Phone</label>
-                        <input type="number" placeholder="+12259623265">
+                        <input type="number" placeholder="+12259623265" id="Phone" required>
 
                     </div>
                     <div class="input2">
                         <label for="">Email</label>
-                        <input type="email" placeholder="esraaa@gmail.com">
+                        <input type="email" placeholder="esraaa@gmail.com" id="email" required>
 
                     </div>
                     <div class="input2">
                         <label for="">Message</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="input Your text here"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="input Your text here" id="message" required> </textarea>
 
                     </div>
 
-                    <button class="form-btn"><a href="confirm-contact.html">Submit <img src="images/Vector.png" alt=""></a></button>
+                    <button class="form-btn"><a  >Submit <img src="images/Vector.png" alt=""></a></button>
                  
                  
 
 
-
-
+<!-- 
+                    href="confirm-contact.html" -->
 
 
 
@@ -484,6 +484,7 @@
             document.querySelector(".language").classList.toggle("left");
         }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
