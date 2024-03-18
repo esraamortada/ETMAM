@@ -881,7 +881,9 @@ input::placeholder {
 .input button img {
     width: 18px;
 }
-
+.message-text{
+    padding: 20px 50px 0px;
+}
 @media screen and (max-width: 1200px) and (min-width:992px) {}
 
 @media screen and (max-width: 992px) and (min-width:786px) {
