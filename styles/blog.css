@@ -65,6 +65,7 @@ a {
 a:hover {
     color: #FDEBC5;
     font-weight: 600;
+    cursor: pointer;
 
 }
 

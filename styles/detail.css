@@ -47,6 +47,10 @@ header {
     align-items: center;
     column-gap: 20px;
 }
+.active {
+    color: #FDEBC5;
+    font-weight: 600;
+}
 
 a {
     text-decoration: none;
@@ -58,6 +62,7 @@ a {
 a:hover {
     color: #FDEBC5;
     font-weight: 600;
+    cursor: pointer;
 
 }
 

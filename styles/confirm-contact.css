@@ -35,7 +35,23 @@ header {
     position: relative;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
 
+    position: fixed;
+    z-index: 2;
+
+
+
 }
+
+header.scroll {
+    background-color: #4F8280;
+
+}
+
+.active {
+    color: #FDEBC5;
+    font-weight: 600;
+}
+
 
 .logo {
     display: flex;
@@ -452,6 +468,7 @@ nav {
 .contact-us {
     display: flex;
     column-gap: 100px;
+    margin-top: 70px;
 
 
 }

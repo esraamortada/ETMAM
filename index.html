@@ -29,7 +29,7 @@
                 <!--main-navvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="nav-link ">Home</a></li>
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li onclick="appear_services()"><a href="#" class="nav-link">Our Services</a></li>
                         <li><a href="details.html" class="nav-link">Projects</a></li>
                         <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -295,7 +295,7 @@
             <div class="language">
                 <ul>
                     <li onclick="change_language_english()"> <img src="images/flag.svg" alt=""> English (UK) </li>
-                    <li onclick="change_language()"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
+                    <li onclick="changeLang()"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
 
                 </ul>
 
@@ -346,7 +346,7 @@
                                 <img src="images/furniture design and manufacture.svg" alt="">
                                 <p>Furniture Design And Manufacture</p>
                             </div>
-                            <div class="service-card"  onclick="navigateToPage('service3.html')">
+                            <div class="service-card" onclick="navigateToPage('service3.html')">
                                 <img src="images/electrical work.svg" alt="">
                                 <p>Electrical Work</p>
                             </div>
@@ -362,19 +362,19 @@
 
                         <div class="row">
 
-                            <div class="service-card"  onclick="navigateToPage('service5.html')">
+                            <div class="service-card" onclick="navigateToPage('service5.html')">
                                 <img src="images/painting and wallpaper work.svg" alt="">
                                 <p>Painting And Wallpaper Work</p>
                             </div>
-                            <div class="service-card"  onclick="navigateToPage('service6.html')">
+                            <div class="service-card" onclick="navigateToPage('service6.html')">
                                 <img src="images/gypsum decorations.svg" alt="">
                                 <p>Gypsum Decorations</p>
                             </div>
-                            <div class="service-card"  onclick="navigateToPage('service7.html')">
+                            <div class="service-card" onclick="navigateToPage('service7.html')">
                                 <img src="images/glass partition walls.svg" alt="">
                                 <p>Glass Partition Walls</p>
                             </div>
-                            <div class="service-card"  onclick="navigateToPage('service8.html')">
+                            <div class="service-card" onclick="navigateToPage('service8.html')">
                                 <img src="images/tile,marble,and parquet works.svg" alt="">
                                 <p>Tile,Marble,And Parquet Works</p>
                             </div>
@@ -578,7 +578,7 @@
                 <div class="icons-container">
                     <div class="circle"><img src="images/call2.svg" alt=""></div>
                     <div class="circle"><img src="images/instagram.svg" alt=""></div>
-              
+
                     <div class="circle"><img src="images/whatsapp.svg" alt=""></div>
                 </div>
 
@@ -651,36 +651,36 @@
 
             document.querySelector(".mini-nav-language").classList.toggle("display");
         }
-        function change_language() {
-            document.querySelector(".language").classList.toggle("right");
-            document.querySelector("body").style.direction = "rtl";
-            // document.querySelector(".rotated-img").style.transform = "rotate(180deg)";
-            // document.querySelector(".rotated-img").style.margin=" 0 auto 0 0"
-            document.querySelector(".rotated-img").style.borderTopLeftRadius = "50%";
-            document.querySelector(".rotated-img").style.borderBottomLeftRadius = "50%";
-            document.querySelector(".rotated-img").style.borderTopRightRadius = "0";
-            document.querySelector(".rotated-img").style.borderBottomRightRadius = "0";
-            document.querySelector(".Aboutus-header").style.padding = "0";
-            document.querySelector(".card-container ").style.margin = "0 10% 0 0";
+        // function change_language() {
+        //     document.querySelector(".language").classList.toggle("right");
+        //     document.querySelector("body").style.direction = "rtl";
+        //     // document.querySelector(".rotated-img").style.transform = "rotate(180deg)";
+        //     // document.querySelector(".rotated-img").style.margin=" 0 auto 0 0"
+        //     document.querySelector(".rotated-img").style.borderTopLeftRadius = "50%";
+        //     document.querySelector(".rotated-img").style.borderBottomLeftRadius = "50%";
+        //     document.querySelector(".rotated-img").style.borderTopRightRadius = "0";
+        //     document.querySelector(".rotated-img").style.borderBottomRightRadius = "0";
+        //     document.querySelector(".Aboutus-header").style.padding = "0";
+        //     document.querySelector(".card-container ").style.margin = "0 10% 0 0";
 
 
 
 
-            // document.querySelector(".blog-img").style.transform = "rotate(360deg)";
-            document.querySelector(".blog-img").style.borderTopLeftRadius = "0";
-            document.querySelector(".blog-img").style.borderBottomLeftRadius = "0";
-            document.querySelector(".blog-img").style.borderTopRightRadius = "50%";
-            document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
-            document.querySelector(".blog-img").style.margin = "0 auto 0 0";
+        //     // document.querySelector(".blog-img").style.transform = "rotate(360deg)";
+        //     document.querySelector(".blog-img").style.borderTopLeftRadius = "0";
+        //     document.querySelector(".blog-img").style.borderBottomLeftRadius = "0";
+        //     document.querySelector(".blog-img").style.borderTopRightRadius = "50%";
+        //     document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
+        //     document.querySelector(".blog-img").style.margin = "0 auto 0 0";
 
-        }
+        // }
         function change_language_english() {
             document.querySelector("body").style.direction = "ltr";
             document.querySelector(".language").classList.toggle("left");
 
 
         }
-     
+
     </script>
     <script src="script.js"></script>
 </body>
