@@ -9,14 +9,11 @@ main {
     flex-direction: column;
     position: relative;
     z-index: 1;
-
-
 }
 
 body {
     font-family: "PT Serif", serif;
     text-transform: capitalize;
-
     position: relative;
     z-index: 1;
 }

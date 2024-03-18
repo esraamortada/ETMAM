@@ -45,22 +45,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 
-// function checklang(){
-
-//     localStorage.setItem('direction', 'ltr');
-
-//     const currentlang = localStorage.getItem('language');
-
-//     if (currentlang === 'arabic') {
-//         document.documentElement = 'rtl';
-
-//     }
-//     else {
-//         document.documentElement = 'ltr';
-//     }
-
-
-// }
 
 
 
@@ -70,49 +54,39 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 
-
-// function change_language() {
-//     localStorage.setItem('direction', 'ltr');
-
-//     const currentlang = localStorage.getItem('language');
-
-//     if (currentlang === 'arabic') {
-//         document.documentElement = 'rtl';
-
-//     }
-//     else {
-//         document.documentElement = 'ltr';
-//     }
+function change_style_ltr() {
+    document.querySelector(".language").classList.add("right");
 
 
-
-//     document.querySelector(".language").classList.toggle("right");
-//     // document.querySelector("body").style.direction = "rtl";
-
-//     document.querySelector(".rotated-img").style.borderTopLeftRadius = "50%";
-//     document.querySelector(".rotated-img").style.borderBottomLeftRadius = "50%";
-//     document.querySelector(".rotated-img").style.borderTopRightRadius = "0";
-//     document.querySelector(".rotated-img").style.borderBottomRightRadius = "0";
-//     document.querySelector(".Aboutus-header").style.padding = "0";
-//     document.querySelector(".card-container ").style.margin = "0 10% 0 0";
+    document.querySelector(".rotated-img").style.borderTopLeftRadius = "0%";
+    document.querySelector(".rotated-img").style.borderBottomLeftRadius = "0%";
+    document.querySelector(".rotated-img").style.borderTopRightRadius = "50%";
+    document.querySelector(".rotated-img").style.borderBottomRightRadius = "50%";
+    document.querySelector(".Aboutus-header").style.padding = "0";
+    document.querySelector(".card-container ").style.margin = "0 0 0 10%";
+    // document.querySelector(".rotated-img").classList.toggle('rotate-arabic');
+    // document.querySelector(".rotated-img").classList.remove('rotate-english');
 
 
 
 
+    document.querySelector(".blog-img").style.borderTopLeftRadius = "50%";
+    document.querySelector(".blog-img").style.borderBottomLeftRadius = "50%";
+    document.querySelector(".blog-img").style.borderTopRightRadius = "0%";
+    document.querySelector(".blog-img").style.borderBottomRightRadius = "0%";
+    // document.querySelector(".blog-img").classList.toggle('blog-arabic');
+    document.querySelector(".blog-img").style.margin = "0 0 0 auto";
 
-//     // document.querySelector(".blog-img").style.transform = "rotate(360deg)";
-//     document.querySelector(".blog-img").style.borderTopLeftRadius = "0";
-//     document.querySelector(".blog-img").style.borderBottomLeftRadius = "0";
-//     document.querySelector(".blog-img").style.borderTopRightRadius = "50%";
-//     document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
-//     document.querySelector(".blog-img").style.margin = "0 auto 0 0";
+}
 
-// }
+function change_language_english() {
+    document.querySelector("body").style.direction = "ltr";
+    document.querySelector(".language").classList.remove("right");
 
 
-
+}
 function change_style() {
-    document.querySelector(".language").classList.toggle("right");
+    document.querySelector(".language").classList.add("right");
 
 
     document.querySelector(".rotated-img").style.borderTopLeftRadius = "50%";
@@ -121,7 +95,8 @@ function change_style() {
     document.querySelector(".rotated-img").style.borderBottomRightRadius = "0";
     document.querySelector(".Aboutus-header").style.padding = "0";
     document.querySelector(".card-container ").style.margin = "0 10% 0 0";
-
+    document.querySelector(".rotated-img").classList.toggle('rotate-arabic');
+    // document.querySelector(".rotated-img").classList.remove('rotate-english');
 
 
 
@@ -130,58 +105,79 @@ function change_style() {
     document.querySelector(".blog-img").style.borderBottomLeftRadius = "0";
     document.querySelector(".blog-img").style.borderTopRightRadius = "50%";
     document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
-    document.querySelector(".blog-img").style.margin = "0 auto 0 0";
+    document.querySelector(".blog-img").classList.toggle('blog-arabic');
+    // document.querySelector(".blog-img").style.margin = "0 auto 0 0";
+
+}
+function change_language_english() {
+    document.querySelector("body").style.direction = "ltr";
+    document.querySelector(".language").classList.remove("right");
+
 
 }
 
 
-
-
-country = {
-    lang: 'arabic',
-    dir: 'rtl'
+function checkdir(direction){
+    if(direction === 'rtl'){
+        change_style();
+        
+    }
+    else{
+        change_style_ltr();
+    }
 }
+
+
+
+checkLang();
+function checkLang() {
+    if (localStorage.getItem('country')) {
+        const country = JSON.parse(localStorage.getItem('country'));
+        if(country.dir === 'rlt'){
+            change_style();
+        }
+        document.body.dir = country.dir;
+        console.log(JSON.parse(localStorage.getItem('country')));
+    }
+}
+
 
 
 
 function setLang(country) {
     localStorage.setItem('country', JSON.stringify(country));
+    document.body.dir = country.dir
 }
 
-setLang(country);
-
-
-console.log(localStorage.getItem('country'));
-
-
-
-
-
-function changeLang() {
+function changeLang(direction) {
+    console.log(direction);
+    console.log(localStorage.getItem('country'));
     if (localStorage.getItem('country')) {
-
-        if (JSON.parse(localStorage.getItem('country') || '').lang === 'arabic') 
-        
-        {
-            const country = {
-                lang: 'english',
-                dir: 'ltr'
+        let country =JSON.parse(localStorage.getItem('country'));
+        console.log(direction);
+        console.log(country.dir != direction);
+        if(country.dir != direction){
+            
+            country={
+                dir: direction
             }
-            setLang(country);
-            document.querySelector("body").style.direction = "ltr"
+           
+            
+           
+            console.log(direction);
 
-        } else {
-            const country = {
-                lang: 'arabic',
-                dir: 'rtl'
-            }
-            setLang(country);
-            document.querySelector("body").style.direction = "rtl"
-            change_style();
         }
-    }
+        setLang(country);
+        checkdir(direction);
+      
+    } else {
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
+    }
 }
-
 
 
 
