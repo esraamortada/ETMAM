@@ -1,4 +1,5 @@
 
+
 function appear() {
     document.querySelector(".language").classList.toggle("display");
 }
@@ -61,36 +62,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
         });
     });
 });
-
-const main =document.querySelector('main');
-main.addEventListener('click',()=>{
-    document.querySelector(".language").classList.remove("display");
-})
-const header =document.querySelector('.header');
-header.addEventListener('click',()=>{
-    document.querySelector(".language").classList.remove("display");
-})
-const main2 =document.querySelector('main');
-main2.addEventListener('click',()=>{
-    document.querySelector(".nav-services").classList.remove("display");
-})
-const header2 =document.querySelector('.header');
-header.addEventListener('click',()=>{
-    document.querySelector(".nav-services").classList.remove("display");
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function checkdir(direction) {
@@ -171,6 +142,14 @@ function changeLang(direction) {
 
 
 
+const main2 =document.querySelector('main');
+main2.addEventListener('click',()=>{
+    document.querySelector(".nav-services").classList.remove("display");
+})
+const main =document.querySelector('main');
+main.addEventListener('click',()=>{
+    document.querySelector(".language").classList.remove("display");
+})
 
 
 
@@ -193,4 +172,3 @@ function change_style() {
 
 
 }
-

@@ -136,9 +136,19 @@ nav {
     row-gap: 16px;
 }
 
+
 .language ul li {
     display: flex;
     column-gap: 10px;
+    transition: transform 0.2s ease-in;
+}
+
+.language ul li:hover {
+    cursor: pointer;
+    /* font-weight: 700;
+    color: #4F8280; */
+    transform: scale(1.05);
+
 }
 
 

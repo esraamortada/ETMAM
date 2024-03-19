@@ -10,6 +10,7 @@ main {
     flex-direction: column;
     row-gap: 50px;
     position: relative;
+    margin-top: 150px;
     z-index: 1;
 
 
@@ -40,17 +41,29 @@ header {
     color: #F4F0EC;
     position: relative;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    position: fixed;
+    z-index: 2;
+
+
+
 
 }
+
+header.scroll {
+    background-color: #4F8280;
+
+}
+
+.active {
+    color: #FDEBC5;
+    font-weight: 600;
+}
+
 
 .logo {
     display: flex;
     align-items: center;
     column-gap: 20px;
-}
-.active {
-    color: #FDEBC5;
-    font-weight: 600;
 }
 
 a {
@@ -122,7 +135,7 @@ nav {
 .language ul {
     list-style-type: none;
     width: 180px;
-   
+
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     background-color: #ffffff;
@@ -133,9 +146,19 @@ nav {
     row-gap: 16px;
 }
 
+
 .language ul li {
     display: flex;
     column-gap: 10px;
+    transition: transform 0.2s ease-in;
+}
+
+.language ul li:hover {
+    cursor: pointer;
+    /* font-weight: 700;
+    color: #4F8280; */
+    transform: scale(1.05);
+
 }
 
 
@@ -1077,7 +1100,7 @@ footer i {
     column-gap: 12px;
 }
 
-.footer .input  input {
+.footer .input input {
     background-color: #7b7b7b;
     border-radius: 30px;
     border: none;
