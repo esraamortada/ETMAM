@@ -2,6 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    text-transform: capitalize;
 }
 
 main {
@@ -22,7 +24,7 @@ html {
     position: relative;
     z-index: 1;
     text-transform: capitalize;
-   
+
 
 }
 
@@ -44,12 +46,13 @@ header {
     position: fixed;
     z-index: 2;
 
-  
+
 
 
 }
+
 header.scroll {
-    background-color: #4F8280; 
+    background-color: #4F8280;
 
 }
 
@@ -57,6 +60,7 @@ header.scroll {
     color: #FDEBC5;
     font-weight: 600;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -124,7 +128,7 @@ nav {
     position: absolute;
     top: 60px;
     right: 10%;
-   
+
 
     z-index: 2;
 }
@@ -132,7 +136,7 @@ nav {
 .language ul {
     list-style-type: none;
     width: 180px;
-   
+
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
     background-color: #ffffff;
@@ -1057,6 +1061,7 @@ nav {
 .after-services img {
     width: 100%;
     border-bottom-left-radius: 500px;
+
 }
 
 .hr {
@@ -1082,7 +1087,7 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    /* row-gap: 20px; */
 }
 
 .card-body {
@@ -1094,6 +1099,9 @@ nav {
 
 .card-body img {
     width: 40px;
+    height: 85px;
+
+
 }
 
 .project h3 {
@@ -1120,8 +1128,8 @@ nav {
     }
 
     .card-body img {
-        width: 16px;
-        height: 16px;
+        width: 30px;
+        height: 63px;
     }
 
     .projects-container {
@@ -1165,7 +1173,7 @@ nav {
 
     .card-body img {
         width: 16px;
-        height: 16px;
+        height: 40px;
     }
 
     .projects-container {
@@ -1210,7 +1218,7 @@ nav {
 
     .card-body img {
         width: 16px;
-        height: 16px;
+        height: 40px;
     }
 
     .projects-container {
@@ -1238,6 +1246,10 @@ nav {
     .project {
         width: 25%;
         row-gap: 5px;
+    }
+    .after-services #after{
+        height: 100px;
+        object-fit: cover;
     }
 
 }
@@ -1742,7 +1754,7 @@ nav {
     justify-content: center;
     /* align-items: center; */
     row-gap: 10px;
-    margin: 0  0 0 10%;
+    margin: 0 0 0 10%;
     width: 60%;
 }
 
@@ -1909,6 +1921,7 @@ nav {
         padding-bottom: 50px;
 
     }
+
     .blog .discover-header {
         margin: 0 auto;
     }
@@ -1989,6 +2002,7 @@ nav {
         padding-bottom: 50px;
 
     }
+
     .blog .discover-header {
         margin: 0 auto;
     }
@@ -2067,6 +2081,7 @@ nav {
         padding-bottom: 50px;
 
     }
+
     .blog .discover-header {
         margin: 0 auto;
     }
@@ -2392,7 +2407,7 @@ input::placeholder {
 .right {
     position: absolute;
     right: calc(100% - 350px);
-  
+
 }
 
 .left {

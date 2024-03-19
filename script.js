@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 function change_style_ltr() {
-    document.querySelector(".language").classList.add("right");
+    document.querySelector(".language").classList.remove("right");
 
 
     document.querySelector(".rotated-img").style.borderTopLeftRadius = "0%";
@@ -79,12 +79,7 @@ function change_style_ltr() {
 
 }
 
-function change_language_english() {
-    document.querySelector("body").style.direction = "ltr";
-    document.querySelector(".language").classList.remove("right");
 
-
-}
 function change_style() {
     document.querySelector(".language").classList.add("right");
 
@@ -130,15 +125,29 @@ function checkdir(direction){
 
 
 checkLang();
+
 function checkLang() {
+    console.log("kkkkk");
     if (localStorage.getItem('country')) {
+        console.log("kkkkk");
+
         const country = JSON.parse(localStorage.getItem('country'));
-        if(country.dir === 'rlt'){
+        console.log(country);
+        if(country.dir == 'rtl'){
             change_style();
+            console.log("kkkkk");
+
         }
         document.body.dir = country.dir;
         console.log(JSON.parse(localStorage.getItem('country')));
+    }else{
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
     }
+   
 }
 
 
