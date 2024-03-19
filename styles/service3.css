@@ -1426,6 +1426,14 @@ nav {
     flex-direction: column;
     row-gap: 20px;
 
+    transition: transform 1s ease-in-out;
+
+}
+
+.discover-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
 }
 
 .inner-text {
@@ -1606,6 +1614,7 @@ nav {
 
 /*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
+
 footer {
     display: flex;
     flex-direction: column;
@@ -1613,6 +1622,7 @@ footer {
     background-color: #5F5F5F;
     color: #F4F0EC;
     padding: 70px 0px;
+
 
 }
 
@@ -1623,11 +1633,12 @@ footer {
     column-gap: 16px;
 
 }
-.social-icons .circle{
+
+.social-icons .circle {
     width: 42px;
     height: 42px;
-    
-    }
+
+}
 
 .icons-container {
 
@@ -1664,7 +1675,7 @@ footer i {
     width: 80%;
     margin: auto;
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     justify-content: space-between;
 }
 
@@ -1701,11 +1712,14 @@ footer i {
     column-gap: 12px;
 }
 
-input {
+.footer .input  input {
     background-color: #7b7b7b;
     border-radius: 30px;
     border: none;
     padding: 12px 10px;
+    width: 58%;
+    outline: none;
+    border: none;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
 
 }
@@ -1714,9 +1728,9 @@ input::placeholder {
     color: #F4F0EC;
 }
 
-.input {
+.footer .input {
     display: flex;
-    width: 280px;
+    width: 260px;
     background-color: #7b7b7b;
     border-radius: 30px;
     position: relative;
@@ -1743,8 +1757,8 @@ input::placeholder {
     .social-icons {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         row-gap: 16px;
+        align-items: flex-start;
     }
 
     .footer {
@@ -1769,8 +1783,8 @@ input::placeholder {
     .social-icons {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         row-gap: 16px;
+        align-items: flex-start;
     }
 
     .footer {
@@ -1820,12 +1834,28 @@ input::placeholder {
     display: block;
 }
 
+
 .right {
     position: absolute;
     right: calc(100% - 350px);
+
 }
 
 .left {
     position: absolute;
     right: 50px;
 }
+
+/* .rotate-arabic{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.blog-arabic{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    margin: 0 auto 0 0;
+} */

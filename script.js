@@ -112,12 +112,12 @@ function change_language_english() {
 }
 
 
-function checkdir(direction){
-    if(direction === 'rtl'){
+function checkdir(direction) {
+    if (direction === 'rtl') {
         change_style();
-        
+
     }
-    else{
+    else {
         change_style_ltr();
     }
 }
@@ -133,21 +133,21 @@ function checkLang() {
 
         const country = JSON.parse(localStorage.getItem('country'));
         console.log(country);
-        if(country.dir == 'rtl'){
+        if (country.dir == 'rtl') {
             change_style();
             console.log("kkkkk");
 
         }
         document.body.dir = country.dir;
         console.log(JSON.parse(localStorage.getItem('country')));
-    }else{
+    } else {
         const country = {
             lang: 'english',
             dir: 'ltr'
         }
         setLang(country);
     }
-   
+
 }
 
 
@@ -162,30 +162,30 @@ function changeLang(direction) {
     console.log(direction);
     console.log(localStorage.getItem('country'));
     if (localStorage.getItem('country')) {
-        let country =JSON.parse(localStorage.getItem('country'));
+        let country = JSON.parse(localStorage.getItem('country'));
         console.log(direction);
         console.log(country.dir != direction);
-        if(country.dir != direction){
-            
-            country={
+        if (country.dir != direction) {
+
+            country = {
                 dir: direction
             }
-           
-            
-           
+
+
+
             console.log(direction);
 
         }
         setLang(country);
         checkdir(direction);
-      
+
     } else {
         const country = {
             lang: 'english',
             dir: 'ltr'
         }
         setLang(country);
-    }
+    }
 }
 
 

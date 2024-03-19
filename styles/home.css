@@ -150,8 +150,16 @@ nav {
 .language ul li {
     display: flex;
     column-gap: 10px;
+    transition: transform 0.2s ease-in;
 }
 
+.language ul li:hover {
+    cursor: pointer;
+    /* font-weight: 700;
+    color: #4F8280; */
+    transform: scale(1.05);
+
+}
 
 .icon {
     display: none;
@@ -1247,7 +1255,8 @@ nav {
         width: 25%;
         row-gap: 5px;
     }
-    .after-services #after{
+
+    .after-services #after {
         height: 100px;
         object-fit: cover;
     }
@@ -1540,7 +1549,13 @@ nav {
     box-shadow: 0.5626646876335144px 0.5626646876335144px 2.2506587505340576px 0px rgba(0, 0, 0, 0.25);
 
 
+    transition: transform 1s ease-in-out;
 
+}
+
+.discover-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 
 }
 
@@ -2247,7 +2262,7 @@ footer i {
     width: 80%;
     margin: auto;
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     justify-content: space-between;
 }
 
@@ -2284,11 +2299,14 @@ footer i {
     column-gap: 12px;
 }
 
-input {
+.footer .input  input {
     background-color: #7b7b7b;
     border-radius: 30px;
     border: none;
     padding: 12px 10px;
+    width: 58%;
+    outline: none;
+    border: none;
     box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
 
 }
@@ -2297,9 +2315,9 @@ input::placeholder {
     color: #F4F0EC;
 }
 
-.input {
+.footer .input {
     display: flex;
-    width: 280px;
+    width: 260px;
     background-color: #7b7b7b;
     border-radius: 30px;
     position: relative;
