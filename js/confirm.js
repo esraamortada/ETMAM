@@ -1,4 +1,5 @@
 
+
 function appear() {
     document.querySelector(".language").classList.toggle("display");
 }
@@ -29,15 +30,6 @@ function navigateToPage(pageUrl) {
     window.location.href = pageUrl;
 }
 
-window.addEventListener('scroll', function () {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 0) {
-        navbar.classList.add('scroll');
-    } else {
-        navbar.classList.remove('scroll');
-    }
-});
-
 
 
 
@@ -58,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
             this.classList.toggle('active');
-            
+
         });
     });
 });
@@ -67,29 +59,8 @@ const main = document.querySelector('main');
 main.addEventListener('click', () => {
     document.querySelector(".language").classList.remove("display");
 })
-const header = document.querySelector('.header');
-header.addEventListener('click', () => {
-    document.querySelector(".language").classList.remove("display");
-})
+
 const main2 = document.querySelector('main');
 main2.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
 })
-const header2 = document.querySelector('.header');
-header.addEventListener('click', () => {
-    document.querySelector(".nav-services").classList.remove("display");
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-

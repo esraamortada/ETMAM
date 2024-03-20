@@ -1513,6 +1513,11 @@ nav {
     column-gap: 16px;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.discover-header button:hover{
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    cursor: pointer;
 }
 
 .discover-header h2 {
@@ -1796,9 +1801,11 @@ nav {
     column-gap: 20px;
     box-shadow: 0.5626646876335144px 0.5626646876335144px 2.2506587505340576px 0px rgba(0, 0, 0, 0.25);
 
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
-
+.card:hover{
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+}
 .card:first-child {
     margin-left: 100px;
 }
@@ -2278,6 +2285,11 @@ footer i {
     color: #FFFFFF;
     border-radius: 30px;
     border: none;
+    transition: all 0.5s ease-in-out;
+}
+.footer button:hover{
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    cursor: pointer;
 }
 
 .col {

@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 main {
@@ -563,7 +563,11 @@ textarea::placeholder {
     color: #F4F0EC;
     border: none;
     border-radius: 30px;
-
+    font-size: 18px;
+    column-gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-btn img {
@@ -572,13 +576,7 @@ textarea::placeholder {
 
 }
 
-.form-btn a {
-    column-gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -877,8 +875,12 @@ footer i {
     color: #FFFFFF;
     border-radius: 30px;
     border: none;
+    transition: all 0.5s ease-in-out;
 }
-
+.footer button:hover{
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+    cursor: pointer;
+}
 .col {
     width: 30%;
     display: flex;

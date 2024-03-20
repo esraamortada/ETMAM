@@ -8,8 +8,7 @@ function change_style_ltr() {
     document.querySelector(".rotated-img").style.borderBottomRightRadius = "50%";
     document.querySelector(".Aboutus-header").style.padding = "0";
     document.querySelector(".card-container ").style.margin = "0 0 0 10%";
-    // document.querySelector(".rotated-img").classList.toggle('rotate-arabic');
-    // document.querySelector(".rotated-img").classList.remove('rotate-english');
+
 
 
 
@@ -18,7 +17,7 @@ function change_style_ltr() {
     document.querySelector(".blog-img").style.borderBottomLeftRadius = "50%";
     document.querySelector(".blog-img").style.borderTopRightRadius = "0%";
     document.querySelector(".blog-img").style.borderBottomRightRadius = "0%";
-    // document.querySelector(".blog-img").classList.toggle('blog-arabic');
+   
     document.querySelector(".blog-img").style.margin = "0 0 0 auto";
 
 }
@@ -34,8 +33,8 @@ function change_style() {
     document.querySelector(".rotated-img").style.borderBottomRightRadius = "0";
     document.querySelector(".Aboutus-header").style.padding = "0";
     document.querySelector(".card-container ").style.margin = "0 10% 0 0";
-    document.querySelector(".rotated-img").classList.toggle('rotate-arabic');
-    // document.querySelector(".rotated-img").classList.remove('rotate-english');
+
+
 
 
 
@@ -44,8 +43,87 @@ function change_style() {
     document.querySelector(".blog-img").style.borderBottomLeftRadius = "0";
     document.querySelector(".blog-img").style.borderTopRightRadius = "50%";
     document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
-    document.querySelector(".blog-img").classList.toggle('blog-arabic');
+
     // document.querySelector(".blog-img").style.margin = "0 auto 0 0";
 
 }
+
+
+
+function checkdir(direction) {
+    if (direction === 'rtl') {
+        change_style();
+
+    }
+    else {
+        change_style_ltr();
+    }
+}
+
+
+
+checkLang();
+
+function checkLang() {
+
+    if (localStorage.getItem('country')) {
+        
+
+        const country = JSON.parse(localStorage.getItem('country'));
+        console.log(country);
+        if (country.dir == 'rtl') {
+            change_style();
+          
+
+        }
+        document.body.dir = country.dir;
+        console.log(JSON.parse(localStorage.getItem('country')));
+    } else {
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
+    }
+
+}
+
+
+
+
+function setLang(country) {
+    localStorage.setItem('country', JSON.stringify(country));
+    document.body.dir = country.dir
+}
+
+function changeLang(direction) {
+    console.log(direction);
+    console.log(localStorage.getItem('country'));
+    if (localStorage.getItem('country')) {
+        let country = JSON.parse(localStorage.getItem('country'));
+        console.log(direction);
+        console.log(country.dir != direction);
+        if (country.dir != direction) {
+
+            country = {
+                dir: direction
+            }
+
+
+
+            console.log(direction);
+
+        }
+        setLang(country);
+        checkdir(direction);
+
+    } else {
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
+    }
+}
+
 
