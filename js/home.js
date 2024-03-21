@@ -126,4 +126,28 @@ function changeLang(direction) {
     }
 }
 
+const subscribe = document.getElementById('subscribe');
+function saveEmail() {
+    fetch("https://api.brevo.com/v3/contacts", {
+        method: "POST",
+        body: JSON.stringify({
+            "email": document.getElementById('mail').value,
+        }),
+        headers: {
+            "Content-type": "application/json",
+            "api-key": "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",
+        }
+    },).catch((err) => {
+        console.log(err);
+    })
+}
+function reset2(){
+    document.getElementById('mail').value = '';
+}
+
+subscribe.addEventListener('submit', (e) => {
+    e.preventDefault();
+    saveEmail();
+    reset2();
+})
 
