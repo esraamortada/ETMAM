@@ -1,4 +1,104 @@
 
+function change_style_ltr() {
+    document.querySelector(".language").classList.remove("right");
+
+    document.querySelector(".footer .input input").classList.remove('arabic-footer');
+
+}
+
+
+function change_style() {
+    document.querySelector(".language").classList.add("right");
+
+
+
+
+
+
+
+    document.querySelector(".footer .input input").classList.add('arabic-footer');
+
+
+}
+
+
+function checkdir(direction) {
+    if (direction === 'rtl') {
+        change_style();
+
+    }
+    else {
+        change_style_ltr();
+    }
+}
+
+
+
+checkLang();
+
+function checkLang() {
+
+    if (localStorage.getItem('country')) {
+        
+
+        const country = JSON.parse(localStorage.getItem('country'));
+        console.log(country);
+        if (country.dir == 'rtl') {
+            change_style();
+          
+
+        }
+        document.body.dir = country.dir;
+        console.log(JSON.parse(localStorage.getItem('country')));
+    } else {
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
+    }
+
+}
+
+
+
+
+function setLang(country) {
+    localStorage.setItem('country', JSON.stringify(country));
+    document.body.dir = country.dir
+}
+
+function changeLang(direction) {
+    console.log(direction);
+    console.log(localStorage.getItem('country'));
+    if (localStorage.getItem('country')) {
+        let country = JSON.parse(localStorage.getItem('country'));
+        console.log(direction);
+        console.log(country.dir != direction);
+        if (country.dir != direction) {
+
+            country = {
+                dir: direction
+            }
+
+
+
+            console.log(direction);
+
+        }
+        setLang(country);
+        checkdir(direction);
+
+    } else {
+        const country = {
+            lang: 'english',
+            dir: 'ltr'
+        }
+        setLang(country);
+    }
+}
+
+
 
 function appear() {
     document.querySelector(".language").classList.toggle("display");
@@ -74,9 +174,15 @@ function saveEmail() {
         }),
         headers: {
             "Content-type": "application/json",
-            "api-key": "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",
+            "api-key": "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",
         }
-    },).catch((err) => {
+    },).then(response =>{
+        if(response.ok){
+            document.getElementById('subscribe-text').textContent ="Congratulations your email saved!!!!";
+            setTimeout(()=>{document.getElementById('subscribe-text').textContent =""},3000);
+        }
+    })
+    .catch((err) => {
         console.log(err);
     })
 }

@@ -175,9 +175,15 @@ function saveEmail() {
         }),
         headers: {
             "Content-type": "application/json",
-            "api-key": "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",
+            "api-key": "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",
         }
-    },).catch((err) => {
+    },).then(response =>{
+        if(response.ok){
+            document.getElementById('subscribe-text').textContent ="Congratulations your email saved!!!!";
+            setTimeout(()=>{document.getElementById('subscribe-text').textContent =""},3000);
+        }
+    })
+    .catch((err) => {
         console.log(err);
     })
 }
