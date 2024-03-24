@@ -172,7 +172,7 @@ function change_style() {
     document.querySelector(".blog-img").style.borderBottomRightRadius = "50%";
     document.querySelector(".footer .input input").classList.add('arabic-footer');
 
-    // document.querySelector(".blog-img").style.margin = "0 auto 0 0";
+    document.querySelector(".blog-img").style.margin = "0 auto 0 0";
 
 }
 
