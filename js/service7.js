@@ -4,6 +4,9 @@ function change_style_ltr() {
 
    
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
+    document.querySelector(".mini-nav").style.right='0';
+    document.querySelector(".mini-nav").style.left='unset';
+
 
 
 
@@ -19,6 +22,9 @@ function change_style() {
    
     
     document.querySelector(".footer .input input").classList.add('arabic-footer');
+    document.querySelector(".mini-nav").style.right='unset';
+    document.querySelector(".mini-nav").style.left='0';
+
     // document.querySelector(".rotated-img").style.margin = "0 auto 0 0";
 
 

@@ -1301,9 +1301,11 @@ input::placeholder {
 }
 
 
+
 .right {
     position: absolute;
-    right: calc(100% - 350px);
+    left: 8%;
+    right: unset;
 
 }
 

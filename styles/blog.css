@@ -1517,10 +1517,10 @@ input::placeholder {
     display: block;
 }
 
-
 .right {
     position: absolute;
-    right: calc(100% - 350px);
+    left: 8%;
+    right: unset;
 
 }
 
