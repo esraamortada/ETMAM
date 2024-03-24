@@ -135,6 +135,7 @@ function change_style() {
     document.querySelector(".footer .input input").classList.add('arabic-footer');
     document.querySelector(".mini-nav").style.right='unset';
     document.querySelector(".mini-nav").style.left='0';
+    
 
 
 

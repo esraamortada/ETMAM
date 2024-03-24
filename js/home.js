@@ -148,6 +148,7 @@ function change_style_ltr() {
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
     document.querySelector(".mini-nav").style.right='0';
     document.querySelector(".mini-nav").style.left='unset';
+    document.getElementById('lang-img').src ="images/flag.svg";
 
 
 }
@@ -178,6 +179,7 @@ function change_style() {
     document.querySelector(".blog-img").style.margin = "0 auto 0 0";
     document.querySelector(".mini-nav").style.right='unset';
     document.querySelector(".mini-nav").style.left='0';
+    document.getElementById('lang-img').src ="images/saudiflag.svg";
 
 
 
