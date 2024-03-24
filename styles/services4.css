@@ -338,6 +338,14 @@ nav {
     display: flex;
     column-gap: 16px;
     flex-direction: row-reverse;
+    transition: all 0.5s ease-in;
+}
+.mini-nav-language ul li:hover {
+    cursor: pointer;
+    /* font-weight: 700;
+    color: #4F8280; */
+    transform: scale(1.05);
+
 }
 
 .nav-item {
@@ -512,9 +520,17 @@ nav {
     padding: 5px;
     border-radius: 30px;
     border: none;
+    transition: all 0.5s ease-in-out;
 
 
 }
+.header-btn:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2);
+
+}
+
 .main-header {
     display: flex;
     flex-direction: column;
