@@ -26,6 +26,7 @@ function change_style() {
     document.querySelector(".rotated-img").style.borderBottomRightRadius = "50%";
     
     document.querySelector(".footer .input input").classList.add('arabic-footer');
+    document.querySelector(".rotated-img").style.margin = "0 auto 0 0";
 
 
 
