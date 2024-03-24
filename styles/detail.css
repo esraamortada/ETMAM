@@ -55,7 +55,7 @@ header.scroll {
 }
 
 .active {
-    color: #FDEBC5;
+    color: #FDEBC5 !important;
     font-weight: 600;
 }
 
@@ -849,7 +849,7 @@ nav {
 
     .detail-col2 {
         width: 100%;
-        padding: 0 15px;
+        padding:  0px;
         font-size: 13px;
     }
 }
