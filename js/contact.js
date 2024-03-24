@@ -46,7 +46,7 @@ function sendEmail() {
         Username: "em9002648@gmail.com",
         Password: "B21F79947EEA4652C61D3041BFA33B414792",
         To: 'esraamortada809@gmail.com',
-        From: 'em9002648@gmail.com',
+        From:  document.getElementById('email').value,
         Subject: "This is the subject",
         Body: "Name:" + document.getElementById('name').value +
             "<br> Email: " + document.getElementById('email').value +
@@ -177,17 +177,17 @@ function saveEmail() {
             "Content-type": "application/json",
             "api-key": "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",
         }
-    },).then(response =>{
-        if(response.ok){
-            document.getElementById('subscribe-text').textContent ="Congratulations your email saved!!!!";
-            setTimeout(()=>{document.getElementById('subscribe-text').textContent =""},3000);
+    },).then(response => {
+        if (response.ok) {
+            document.getElementById('subscribe-text').textContent = "Congratulations your email saved!!!!";
+            setTimeout(() => { document.getElementById('subscribe-text').textContent = "" }, 3000);
         }
     })
-    .catch((err) => {
-        console.log(err);
-    })
+        .catch((err) => {
+            console.log(err);
+        })
 }
-function reset2(){
+function reset2() {
     document.getElementById('mail').value = '';
 }
 
