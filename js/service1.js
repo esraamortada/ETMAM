@@ -10,7 +10,19 @@ function change_style_ltr() {
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
     document.querySelector(".mini-nav").style.right='0';
     document.querySelector(".mini-nav").style.left='unset';
+    document.querySelector('.lang-img').src ="images/flag.svg";
+    document.querySelector(".language").classList.remove("display");
+    document.querySelector(".select-text").textContent="English (UK)";
+    document.querySelector('.lang-img2').src ="images/flag.svg";
 
+    document.querySelector(".select-text2").textContent="English (UK)";
+    
+    document.querySelector(".select-text2").textContent="English (UK)";
+    document.querySelectorAll('.i').forEach((i)=>{
+        i.classList.remove("change-i2")
+    });
+    document.querySelector(".footer-img").classList.remove("footer-arabic");
+  
 
 
 
@@ -32,6 +44,18 @@ function change_style() {
     // document.querySelector(".rotated-img").style.margin = "0 auto 0 0";
     document.querySelector(".mini-nav").style.right='unset';
     document.querySelector(".mini-nav").style.left='0';
+    document.querySelector('.lang-img').src ="images/saudiflag.svg";
+    document.querySelector(".language").classList.remove("display");
+    document.querySelector(".select-text").textContent="Arabic (KSA)";
+    document.querySelector(".select-text2").textContent="Arabic (KSA)";
+
+    document.querySelector(".select-text2").textContent="Arabic (KSA)";
+    document.querySelector(".select-text2").textContent="Arabic (KSA)";
+    document.querySelectorAll('.i').forEach((i)=>{
+        i.classList.add("change-i2")
+    });
+    document.querySelector(".footer-img").classList.add("footer-arabic");
+    // document.querySelector('body').classList.add("arabic");
 
 
 
@@ -151,6 +175,7 @@ subscribe.addEventListener('submit', (e) => {
 
 function appear() {
     document.querySelector(".language").classList.toggle("display");
+    document.querySelector("#icon").classList.toggle('change-i');
 }
 function appear_nav() {
     document.querySelector(".mini-nav").style.display = "block";
@@ -172,6 +197,7 @@ function appear_menu_projects() {
 function mini_nav_language() {
 
     document.querySelector(".mini-nav-language").classList.toggle("display");
+    document.querySelector("#icon2").classList.toggle('change-i');
 }
 
 

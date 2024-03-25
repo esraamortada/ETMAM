@@ -1141,3 +1141,14 @@ input::placeholder {
     position: absolute;
     right: 50px;
 }
+.change-i {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.change-i2{
+    transform: rotate(180deg);
+}
+.footer-arabic{
+    transform: rotate(180deg);
+}

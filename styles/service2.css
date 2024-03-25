@@ -1221,7 +1221,7 @@ nav {
 .Aboutus-header p:first-of-type {
     color: #6B6B6B;
     font-size: 24px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .Aboutus-header p:last-of-type {
@@ -1457,7 +1457,7 @@ nav {
     display: flex;
     column-gap: 20px;
     width: 70%;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .li .inner-li {
@@ -1480,7 +1480,7 @@ nav {
 .li .inner-li p {
     font-size: 13px;
     color: #A4A4A4;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .services-img {
@@ -1826,8 +1826,7 @@ nav {
 
 }
 
-.our-comitment .inner-card .inner-card-text p:nth-child(1),
-p:nth-child(2) {
+.our-comitment .inner-card .inner-card-text .p-text{
     font-size: 24px;
     text-align: center;
 
@@ -2139,4 +2138,19 @@ input::placeholder {
 .left {
     position: absolute;
     right: 50px;
+}
+.change-i {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.change-i2{
+    transform: rotate(180deg);
+}
+.footer-arabic{
+    transform: rotate(180deg);
+}
+.arabic{
+    text-align: right;
+    
 }

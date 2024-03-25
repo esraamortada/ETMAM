@@ -183,7 +183,7 @@
                     <div class="lang">
                         <div class="nav-a">
                             <div class="select" onclick="mini_nav_language()">
-                                <i class="fa-solid fa-chevron-down"></i> English (UK) <img src="images/flag.svg"
+                                <i class="fa-solid fa-chevron-down" id="icon2"></i><div class="select-text2"> English (UK)</div><img  class="lang-img2" src="images/flag.svg"
                                     alt="">
 
                             </div>
@@ -192,8 +192,6 @@
                             <ul>
                                 <li onclick="changeLang('ltr')"> <img src="images/flag.svg" alt=""> English (UK) </li>
                                 <li onclick="changeLang('rtl')"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
-
-
                             </ul>
 
                         </div>
@@ -284,7 +282,7 @@
             </div>
 
             <div class="select" onclick="appear()">
-                <img src="images/flag.svg" alt=""> English (UK) <i class="fa-solid fa-chevron-down"></i>
+                <img src="images/flag.svg" alt="" class="lang-img"> <div class="select-text">English (UK)</div> <i class="fa-solid fa-chevron-down" id="icon"></i>
 
             </div>
 
@@ -293,7 +291,7 @@
         <div class="language">
             <ul>
                 <li onclick="changeLang('ltr')"> <img src="images/flag.svg" alt=""> English (UK) </li>
-                <li onclick="changeLang('rtl')"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
+                <li onclick="changeLang('rtl')" > <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
 
             </ul>
 
@@ -319,7 +317,7 @@
 
                <div class="confirm">
 
-                <img src="images/show-contact.svg" alt="">
+                <img src="images/show-contact.svg"  alt="">
 
              <div class="content">
                 <h3>THANK YOU </h3>
@@ -328,8 +326,8 @@
              </div>
                 
                <div class="btns-container">
-                <button  onclick="navigateToPage('index.html')"><i class="fa-solid fa-chevron-left"></i>Back to home page</button>
-                <button>See Our Projects<i class="fa-solid fa-chevron-right"></i></button>
+                <button  onclick="navigateToPage('index.html')"><i class="fa-solid fa-chevron-left i"></i>Back to home page</button>
+                <button>See Our Projects<i class="fa-solid fa-chevron-right i"></i></button>
 
                </div>
 
@@ -394,7 +392,7 @@
             <div class="col">
                 <p>BUILD YOUR BEST INTERIOR DESIGN WITH US</p>
 
-                <button onclick="navigateToPage('contact.html')" >LET’S TALK <i class="fa-solid fa-chevron-right"></i></button>
+                <button onclick="navigateToPage('contact.html')" >LET’S TALK <i class="fa-solid fa-chevron-right i"></i></button>
             </div>
             <div class="col">
                 <p>Address</p>
@@ -409,7 +407,7 @@
                 <p>Subscribe to get newsletter from us</p>
                 <form action="" id="subscribe">
                     <div class="input"><input type="text" placeholder="input your email" id="mail">
-                        <button>Subscribe <img src="images/Vector.png" alt=""></button>
+                        <button>Subscribe <img src="images/Vector.png" class="footer-img" alt=""></button>
                     </div>
                     <p id="subscribe-text"></p>
                 </form>
