@@ -1883,7 +1883,12 @@ input::placeholder {
     }
 
 }
+@media screen and (max-width: 300px){
+    .footer .input{
+        width: 100%;
+    }
 
+}
 
 .display {
     display: block;

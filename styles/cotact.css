@@ -244,7 +244,7 @@ nav {
 
 .mini-nav {
     display: none;
-    position: absolute;
+    position: absolute ;
     top: 0px;
     right: 0px;
     height: 100vh;
@@ -343,6 +343,7 @@ nav {
     flex-direction: row-reverse;
     transition: all 0.5s ease-in;
 }
+
 .mini-nav-language ul li:hover {
     cursor: pointer;
     /* font-weight: 700;
@@ -350,6 +351,7 @@ nav {
     transform: scale(1.05);
 
 }
+
 .nav-item {
     width: 100%;
 }
@@ -516,7 +518,7 @@ label {
     flex-direction: column;
     justify-content: center;
     row-gap: 40px;
-    
+
 }
 
 .contact-us form {
@@ -552,7 +554,11 @@ textarea {
 
 }
 
-.contact-us form .input2 input::placeholder,
+.contact-us form .input2 input::placeholder {
+    color: #A4A4A4;
+    font-size: 16px;
+}
+
 textarea::placeholder {
     color: #A4A4A4;
     font-size: 16px;
@@ -920,7 +926,7 @@ footer i {
     outline: none;
     border: none;
 
-  
+
     /* box-shadow: 0px 4px 8px 0px rgba(146, 146, 146, 0.2); */
     color: #FFFFFF;
 }
@@ -928,6 +934,7 @@ footer i {
 input::placeholder {
     color: #F4F0EC;
 }
+
 
 .footer .input {
     display: flex;
@@ -937,7 +944,8 @@ input::placeholder {
     /* position: relative; */
     justify-content: space-between;
 }
-#subscribe-text{
+
+#subscribe-text {
     margin-top: 10px;
 }
 
@@ -1040,9 +1048,14 @@ input::placeholder {
     .input {
         width: 250px;
     }
+   
+}
+@media screen and (max-width: 300px){
+    .footer .input{
+        width: 100%;
+    }
 
 }
-
 
 .display {
     display: block;
@@ -1056,19 +1069,22 @@ input::placeholder {
     right: unset;
 
 }
+
 .left {
     position: absolute;
     right: 50px;
 }
+
 .change-i {
     transform: rotate(180deg);
     transition: all 0.2s ease-in-out;
 }
 
 
-.change-i2{
+.change-i2 {
     transform: rotate(180deg);
 }
-.footer-arabic{
+
+.footer-arabic {
     transform: rotate(180deg);
 }

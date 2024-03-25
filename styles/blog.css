@@ -1509,9 +1509,15 @@ input::placeholder {
     .input {
         width: 250px;
     }
+  
 
 }
+@media screen and (max-width: 300px){
+    .footer .input{
+        width: 100%;
+    }
 
+}
 
 .display {
     display: block;

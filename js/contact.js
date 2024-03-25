@@ -46,7 +46,7 @@ function sendEmail() {
         Username: "em9002648@gmail.com",
         Password: "B21F79947EEA4652C61D3041BFA33B414792",
         To: 'esraamortada809@gmail.com',
-        From:  document.getElementById('email').value,
+        From: document.getElementById('email').value,
         Subject: "This is the subject",
         Body: "Name:" + document.getElementById('name').value +
             "<br> Email: " + document.getElementById('email').value +
@@ -136,23 +136,26 @@ function change_style_ltr() {
     document.querySelector(".language").classList.remove("right");
 
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
-    document.querySelector(".mini-nav").style.right='0';
-    document.querySelector(".mini-nav").style.left='unset';
-    document.querySelector('.lang-img').src ="images/flag.svg";
+    document.querySelector(".mini-nav").style.right = 'unset';
+    document.querySelector(".mini-nav").style.left = '0';
+
+    document.querySelector('.lang-img').src = "images/flag.svg";
+
     document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="English (UK)";
-    document.querySelector('.lang-img2').src ="images/flag.svg";
+    document.querySelector(".select-text").textContent = "English (UK)";
 
-    document.querySelector(".select-text2").textContent="English (UK)";
+    document.querySelector('.lang-img2').src = "images/flag.svg";
 
-    
-    document.querySelector(".select-text2").textContent="English (UK)";
-    document.querySelectorAll('.i').forEach((i)=>{
+    document.querySelector(".select-text2").textContent = "English (UK)";
+
+
+
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
     document.querySelector(".vector").classList.remove("footer-arabic");
-  
+
 
 
 }
@@ -164,27 +167,26 @@ function change_style() {
 
 
 
-
-
-
     document.querySelector(".footer .input input").classList.add('arabic-footer');
-    document.querySelector(".mini-nav").style.right='unset';
-    document.querySelector(".mini-nav").style.left='0';
-    document.querySelector('.lang-img').src ="images/saudiflag.svg";
-    document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="Arabic (KSA)";
-    document.querySelector('.lang-img2').src ="images/saudiflag.svg";
+    document.querySelector(".mini-nav").style.right = 'unset';
+    document.querySelector(".mini-nav").style.left = '0';
 
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelectorAll('.i').forEach((i)=>{
+    document.querySelector('.lang-img').src = "images/saudiflag.svg";
+    document.querySelector(".language").classList.remove("display");
+    document.querySelector(".select-text").textContent = "Arabic (KSA)";
+
+    document.querySelector('.lang-img2').src = "images/saudiflag.svg";
+
+    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+   
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
     document.querySelector(".vector").classList.add("footer-arabic");
 
 
-
+    console.log(document.querySelector(".mini-nav").style.left);
 }
 
 
@@ -206,13 +208,13 @@ checkLang();
 function checkLang() {
 
     if (localStorage.getItem('country')) {
-        
+
 
         const country = JSON.parse(localStorage.getItem('country'));
         console.log(country);
         if (country.dir == 'rtl') {
             change_style();
-          
+
 
         }
         document.body.dir = country.dir;

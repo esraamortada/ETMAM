@@ -28,11 +28,11 @@
             <!--main-navvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
             <nav>
                 <ul>
-                    <li><a href="index.html" class="nav-link" >Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li onclick="appear_services()"><a href="#" class="nav-link">Our Services</a></li>
-                    <li><a href="details.html" class="nav-link" >Projects</a></li>
-                    <li><a href="blog.html" class="nav-link" >Blog</a></li>
-                    <li><a href="contact.html" class="nav-link active" >Contact Us</a></li>
+                    <li><a href="details.html" class="nav-link">Projects</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -184,15 +184,17 @@
                     <div class="lang">
                         <div class="nav-a">
                             <div class="select" onclick="mini_nav_language()">
-                                <i class="fa-solid fa-chevron-down" id="icon2"></i><div class="select-text2"> English (UK)</div><img  class="lang-img2" src="images/flag.svg"
-                                    alt="">
+                                <i class="fa-solid fa-chevron-down" id="icon2"></i>
+                                <div class="select-text2"> English (UK)</div><img class="lang-img2"
+                                    src="images/flag.svg" alt="">
 
                             </div>
                         </div>
                         <div class="mini-nav-language">
                             <ul>
                                 <li onclick="changeLang('ltr')"> <img src="images/flag.svg" alt=""> English (UK) </li>
-                                <li onclick="changeLang('rtl')"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
+                                <li onclick="changeLang('rtl')"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA)
+                                </li>
                             </ul>
 
                         </div>
@@ -282,7 +284,8 @@
             </div>
 
             <div class="select" onclick="appear()">
-                <img src="images/flag.svg" alt="" class="lang-img"> <div class="select-text">English (UK)</div> <i class="fa-solid fa-chevron-down" id="icon"></i>
+                <img src="images/flag.svg" alt="" class="lang-img">
+                <div class="select-text">English (UK)</div> <i class="fa-solid fa-chevron-down" id="icon"></i>
 
             </div>
 
@@ -291,7 +294,7 @@
         <div class="language">
             <ul>
                 <li onclick="changeLang('ltr')"> <img src="images/flag.svg" alt=""> English (UK) </li>
-                <li onclick="changeLang('rtl')" > <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
+                <li onclick="changeLang('rtl')"> <img src="images/saudiflag.svg" alt=""> Arabic (KSA) </li>
 
             </ul>
 
@@ -323,7 +326,7 @@
                     </div>
                     <div class="input2">
                         <label for="">Phone</label>
-                        <input type="number" placeholder="+12259623265" id="phone" name="phone" >
+                        <input type="number" placeholder="+12259623265" id="phone" name="phone">
 
                     </div>
                     <div class="input2">
@@ -333,12 +336,15 @@
                     </div>
                     <div class="input2">
                         <label for="">Message *</label>
-                        <textarea cols="30" rows="10"  id="message"  name="message" required placeholder="input Your text here"> </textarea>
-
+                        <!-- <textarea cols="30" rows="10" placeholder="input Your text here" id="message" name="message"
+                            required> </textarea> -->
+                        <textarea cols="30" rows="10" placeholder="input Your text here" id="message" name="message"
+                            required></textarea>
                     </div>
 
+
                     <button class="form-btn"> Submit <img src="images/Vector.png" alt="" class="vector"></button>
-                   
+
                     <p class="message-text" id="message-text"></p>
 
 
@@ -403,7 +409,8 @@
             <div class="col">
                 <p>BUILD YOUR BEST INTERIOR DESIGN WITH US</p>
 
-                <button onclick="navigateToPage('contact.html')">LET’S TALK <i class="fa-solid fa-chevron-right i"></i></button>
+                <button onclick="navigateToPage('contact.html')">LET’S TALK <i
+                        class="fa-solid fa-chevron-right i"></i></button>
             </div>
             <div class="col">
                 <p>Address</p>
@@ -437,7 +444,7 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> -->
-      
+
     <!-- <script src="script.js"></script> -->
     <script src="js/contact.js"></script>
 </body>

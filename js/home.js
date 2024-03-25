@@ -201,7 +201,7 @@ function change_style() {
     document.querySelector('.lang-img').src ="images/saudiflag.svg";
     document.querySelector(".language").classList.remove("display");
     document.querySelector(".select-text").textContent="Arabic (KSA)";
-
+    document.querySelector('.lang-img2').src ="images/saudiflag.svg";
     document.querySelector(".select-text2").textContent="Arabic (KSA)";
     document.querySelectorAll('.i').forEach((i)=>{
         i.classList.add("change-i2")
