@@ -136,8 +136,8 @@ function change_style_ltr() {
     document.querySelector(".language").classList.remove("right");
 
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
-    document.querySelector(".mini-nav").style.right = 'unset';
-    document.querySelector(".mini-nav").style.left = '0';
+    document.querySelector(".mini-nav").style.right = '0';
+    document.querySelector(".mini-nav").style.left = 'unset';
 
     document.querySelector('.lang-img').src = "images/flag.svg";
 
@@ -170,7 +170,7 @@ function change_style() {
     document.querySelector(".footer .input input").classList.add('arabic-footer');
     document.querySelector(".mini-nav").style.right = 'unset';
     document.querySelector(".mini-nav").style.left = '0';
-
+    document.querySelector(".mini-nav .ul").style.position = 'relative';
     document.querySelector('.lang-img').src = "images/saudiflag.svg";
     document.querySelector(".language").classList.remove("display");
     document.querySelector(".select-text").textContent = "Arabic (KSA)";

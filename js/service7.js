@@ -2,23 +2,23 @@ function change_style_ltr() {
     document.querySelector(".language").classList.remove("right");
 
 
-   
+
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
-    document.querySelector(".mini-nav").style.right='0';
-    document.querySelector(".mini-nav").style.left='unset';
-    document.querySelector('.lang-img').src ="images/flag.svg";
+    document.querySelector(".mini-nav").style.right = '0';
+    document.querySelector(".mini-nav").style.left = 'unset';
+    document.querySelector('.lang-img').src = "images/flag.svg";
     document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="English (UK)";
-    document.querySelector('.lang-img2').src ="images/flag.svg";
+    document.querySelector(".select-text").textContent = "English (UK)";
+    document.querySelector('.lang-img2').src = "images/flag.svg";
 
-    document.querySelector(".select-text2").textContent="English (UK)";
+    document.querySelector(".select-text2").textContent = "English (UK)";
 
-    document.querySelector(".select-text2").textContent="English (UK)";
-    document.querySelectorAll('.i').forEach((i)=>{
+    document.querySelector(".select-text2").textContent = "English (UK)";
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
-  
+
 
 
 
@@ -32,19 +32,21 @@ function change_style() {
     document.querySelector(".language").classList.add("right");
 
 
-   
-    
-    document.querySelector(".footer .input input").classList.add('arabic-footer');
-    document.querySelector(".mini-nav").style.right='unset';
-    document.querySelector(".mini-nav").style.left='0';
-    document.querySelector('.lang-img').src ="images/saudiflag.svg";
-    document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="Arabic (KSA)"; 
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
 
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelectorAll('.i').forEach((i)=>{
+
+    document.querySelector(".footer .input input").classList.add('arabic-footer');
+    document.querySelector(".mini-nav").style.right = 'unset';
+    document.querySelector(".mini-nav").style.left = '0';
+    // document.querySelector(".mini-nav .ul").style.position = 'absolute';
+
+    document.querySelector('.lang-img').src = "images/saudiflag.svg";
+    document.querySelector(".language").classList.remove("display");
+    document.querySelector(".select-text").textContent = "Arabic (KSA)";
+    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+
+    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
@@ -71,13 +73,13 @@ checkLang();
 function checkLang() {
 
     if (localStorage.getItem('country')) {
-        
+
 
         const country = JSON.parse(localStorage.getItem('country'));
         console.log(country);
         if (country.dir == 'rtl') {
             change_style();
-          
+
 
         }
         document.body.dir = country.dir;
@@ -143,17 +145,17 @@ function saveEmail() {
             "Content-type": "application/json",
             "api-key": "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",
         }
-    },).then(response =>{
-        if(response.ok){
-            document.getElementById('subscribe-text').textContent ="Congratulations your email saved!!!!";
-            setTimeout(()=>{document.getElementById('subscribe-text').textContent =""},3000);
+    },).then(response => {
+        if (response.ok) {
+            document.getElementById('subscribe-text').textContent = "Congratulations your email saved!!!!";
+            setTimeout(() => { document.getElementById('subscribe-text').textContent = "" }, 3000);
         }
     })
-    .catch((err) => {
-        console.log(err);
-    })
+        .catch((err) => {
+            console.log(err);
+        })
 }
-function reset2(){
+function reset2() {
     document.getElementById('mail').value = '';
 }
 
