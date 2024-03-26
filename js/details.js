@@ -12,7 +12,7 @@ function change_style_ltr() {
 
     document.querySelector(".select-text2").textContent="English (UK)";
     
-    document.querySelector(".select-text2").textContent="English (UK)";
+ 
     document.querySelectorAll('.i').forEach((i)=>{
         i.classList.remove("change-i2")
     });
@@ -40,7 +40,7 @@ function change_style() {
     document.querySelector('.lang-img2').src ="images/saudiflag.svg";
    
     document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
+
     document.querySelectorAll('.i').forEach((i)=>{
         i.classList.add("change-i2")
     });
@@ -143,10 +143,12 @@ function appear_services() {
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
+    document.querySelector("#i2").classList.toggle("change-i");
 }
 function appear_menu_projects() {
 
     document.querySelector(".inner-ul2").classList.toggle("display");
+    document.querySelector("#i3").classList.toggle("change-i");
 
 }
 function mini_nav_language() {
@@ -301,3 +303,18 @@ subscribe.addEventListener('submit', (e) => {
     saveEmail();
     reset2();
 })
+
+
+/*table of content*/
+document.querySelectorAll(".linkk").forEach((a)=>{
+a.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const sid = a.getAttribute('href');
+    console.log(this);
+    
+    document.querySelector(sid).scrollIntoView({
+        behavior:'smooth'
+    });
+});
+});
+

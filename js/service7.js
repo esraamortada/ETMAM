@@ -13,7 +13,6 @@ function change_style_ltr() {
 
     document.querySelector(".select-text2").textContent = "English (UK)";
 
-    document.querySelector(".select-text2").textContent = "English (UK)";
     document.querySelectorAll('.i').forEach((i) => {
         i.classList.remove("change-i2")
     });
@@ -42,10 +41,10 @@ function change_style() {
     document.querySelector('.lang-img').src = "images/saudiflag.svg";
     document.querySelector(".language").classList.remove("display");
     document.querySelector(".select-text").textContent = "Arabic (KSA)";
+    document.querySelector('.lang-img2').src = "images/saudiflag.svg";
     document.querySelector(".select-text2").textContent = "Arabic (KSA)";
 
-    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
-    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+  
     document.querySelectorAll('.i').forEach((i) => {
         i.classList.add("change-i2")
     });
@@ -182,10 +181,12 @@ function appear_services() {
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
+    document.querySelector("#i2").classList.toggle("change-i");
 }
 function appear_menu_projects() {
 
     document.querySelector(".inner-ul2").classList.toggle("display");
+    document.querySelector("#i3").classList.toggle("change-i");
 
 }
 function mini_nav_language() {

@@ -106,10 +106,12 @@ function appear_services() {
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
+    document.querySelector("#i2").classList.toggle("change-i");
 }
 function appear_menu_projects() {
 
     document.querySelector(".inner-ul2").classList.toggle("display");
+    document.querySelector("#i3").classList.toggle("change-i");
 
 }
 function mini_nav_language() {
