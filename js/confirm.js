@@ -138,8 +138,16 @@ function appear_nav() {
 function hide_nav() {
     document.querySelector(".mini-nav").style.display = "none";
 }
+let activeFlag = false;
 function appear_services() {
     document.querySelector(".nav-services").classList.toggle("display");
+
+    activeFlag = !activeFlag;
+    if (!activeFlag) {
+        document.querySelector("#services").classList.remove("active");
+    } else {
+        document.querySelector("#services").classList.add("active");
+    }
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
@@ -161,6 +169,7 @@ function mini_nav_language() {
 function navigateToPage(pageUrl) {
     window.location.href = pageUrl;
 }
+
 
 
 
@@ -192,10 +201,16 @@ main.addEventListener('click', () => {
     document.querySelector(".language").classList.remove("display");
 })
 
+
+
 const main2 = document.querySelector('main');
 main2.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
+    document.querySelector("#services").classList.remove("active");
+    activeFlag = !activeFlag
 })
+
+
 
 const subscribe = document.getElementById('subscribe');
 function saveEmail() {

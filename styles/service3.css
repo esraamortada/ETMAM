@@ -1926,3 +1926,7 @@ input::placeholder {
     font-weight: 600 !important;
     
 }
+.active {
+    color: #FDEBC5;
+    font-weight: 600;
+}

@@ -14,13 +14,22 @@ function appear_nav() {
 function hide_nav() {
     document.querySelector(".mini-nav").style.display = "none";
 }
+
+let activeFlag = false;
 function appear_services() {
     document.querySelector(".nav-services").classList.toggle("display");
+
+    activeFlag = !activeFlag;
+    if (!activeFlag) {
+        document.querySelector("#services").classList.remove("active");
+    } else {
+        document.querySelector("#services").classList.add("active");
+    }
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
     document.querySelector("#i2").classList.toggle("change-i");
- 
+
 
 }
 function appear_menu_projects() {
@@ -32,7 +41,7 @@ function appear_menu_projects() {
 function mini_nav_language() {
 
     document.querySelector(".mini-nav-language").classList.toggle("display");
-    
+
     document.querySelector("#icon2").classList.toggle('change-i');
 }
 
@@ -63,17 +72,17 @@ function saveEmail() {
             "Content-type": "application/json",
             "api-key": "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",
         }
-    },).then(response =>{
-        if(response.ok){
-            document.getElementById('subscribe-text').textContent ="Congratulations your email saved!!!!";
-            setTimeout(()=>{document.getElementById('subscribe-text').textContent =""},3000);
+    },).then(response => {
+        if (response.ok) {
+            document.getElementById('subscribe-text').textContent = "Congratulations your email saved!!!!";
+            setTimeout(() => { document.getElementById('subscribe-text').textContent = "" }, 3000);
         }
     })
-    .catch((err) => {
-        console.log(err);
-    })
+        .catch((err) => {
+            console.log(err);
+        })
 }
-function reset2(){
+function reset2() {
     document.getElementById('mail').value = '';
 }
 
@@ -84,24 +93,7 @@ subscribe.addEventListener('submit', (e) => {
 })
 
 
-document.addEventListener('DOMContentLoaded', function (event) {
-    event.preventDefault();
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(function (link) {
 
-        link.addEventListener('click', function (e) {
-            // e.preventDefault();
-
-            links.forEach(function (link) {
-                link.classList.remove('active');
-            });
-
-
-            this.classList.toggle('active');
-
-        });
-    });
-});
 
 const main = document.querySelector('main');
 main.addEventListener('click', () => {
@@ -115,10 +107,15 @@ header.addEventListener('click', () => {
 const main2 = document.querySelector('main');
 main2.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
+    document.querySelector("#services").classList.remove("active");
+    activeFlag = !activeFlag
 })
 const header2 = document.querySelector('.header');
 header.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
+    document.querySelector("#services").classList.remove("active");
+    activeFlag = !activeFlag
+
 })
 
 
@@ -154,25 +151,25 @@ function change_style_ltr() {
     document.querySelector(".blog-img").style.borderBottomLeftRadius = "50%";
     document.querySelector(".blog-img").style.borderTopRightRadius = "0%";
     document.querySelector(".blog-img").style.borderBottomRightRadius = "0%";
-   
+
     document.querySelector(".blog-img").style.margin = "0 0 0 auto";
     document.querySelector(".footer .input input").classList.remove('arabic-footer');
-    document.querySelector(".mini-nav").style.right='0';
-    document.querySelector(".mini-nav").style.left='unset';
-    document.querySelector('.lang-img').src ="images/flag.svg";
+    document.querySelector(".mini-nav").style.right = '0';
+    document.querySelector(".mini-nav").style.left = 'unset';
+    document.querySelector('.lang-img').src = "images/flag.svg";
     document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="English (UK)";
-    document.querySelector('.lang-img2').src ="images/flag.svg";
+    document.querySelector(".select-text").textContent = "English (UK)";
+    document.querySelector('.lang-img2').src = "images/flag.svg";
 
-    document.querySelector(".select-text2").textContent="English (UK)";
-    document.querySelectorAll('.i').forEach((i)=>{
+    document.querySelector(".select-text2").textContent = "English (UK)";
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
-  
-  
 
- 
+
+
+
 
 }
 
@@ -200,18 +197,18 @@ function change_style() {
     document.querySelector(".footer .input input").classList.add('arabic-footer');
 
     document.querySelector(".blog-img").style.margin = "0 auto 0 0";
-    document.querySelector(".mini-nav").style.right='unset';
-    document.querySelector(".mini-nav").style.left='0';
-    document.querySelector('.lang-img').src ="images/saudiflag.svg";
+    document.querySelector(".mini-nav").style.right = 'unset';
+    document.querySelector(".mini-nav").style.left = '0';
+    document.querySelector('.lang-img').src = "images/saudiflag.svg";
     document.querySelector(".language").classList.remove("display");
-    document.querySelector(".select-text").textContent="Arabic (KSA)";
-    document.querySelector('.lang-img2').src ="images/saudiflag.svg";
-    document.querySelector(".select-text2").textContent="Arabic (KSA)";
-    document.querySelectorAll('.i').forEach((i)=>{
+    document.querySelector(".select-text").textContent = "Arabic (KSA)";
+    document.querySelector('.lang-img2').src = "images/saudiflag.svg";
+    document.querySelector(".select-text2").textContent = "Arabic (KSA)";
+    document.querySelectorAll('.i').forEach((i) => {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
-  
+
 
 
 
@@ -240,13 +237,13 @@ checkLang();
 function checkLang() {
 
     if (localStorage.getItem('country')) {
-        
+
 
         const country = JSON.parse(localStorage.getItem('country'));
         console.log(country);
         if (country.dir == 'rtl') {
             change_style();
-          
+
 
         }
         document.body.dir = country.dir;

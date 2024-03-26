@@ -183,8 +183,16 @@ function appear_nav() {
 function hide_nav() {
     document.querySelector(".mini-nav").style.display = "none";
 }
+let activeFlag = false;
 function appear_services() {
     document.querySelector(".nav-services").classList.toggle("display");
+
+    activeFlag = !activeFlag;
+    if (!activeFlag) {
+        document.querySelector("#services").classList.remove("active");
+    } else {
+        document.querySelector("#services").classList.add("active");
+    }
 }
 function appear_menu_services() {
     document.querySelector(".inner-ul").classList.toggle("display");
@@ -219,25 +227,6 @@ window.addEventListener('scroll', function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function (event) {
-    event.preventDefault();
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(function (link) {
-
-        link.addEventListener('click', function (e) {
-            // e.preventDefault();
-
-            links.forEach(function (link) {
-                link.classList.remove('active');
-            });
-
-
-            this.classList.toggle('active');
-
-        });
-    });
-});
-
 
 const main = document.querySelector('main');
 main.addEventListener('click', () => {
@@ -248,13 +237,19 @@ const header = document.querySelector('.header');
 header.addEventListener('click', () => {
     document.querySelector(".language").classList.remove("display");
 })
+
 const main2 = document.querySelector('main');
 main2.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
+    document.querySelector("#services").classList.remove("active");
+    activeFlag = !activeFlag
 })
 const header2 = document.querySelector('.header');
 header.addEventListener('click', () => {
     document.querySelector(".nav-services").classList.remove("display");
+    document.querySelector("#services").classList.remove("active");
+    activeFlag = !activeFlag
+
 })
 
 
