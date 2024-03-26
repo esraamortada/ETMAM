@@ -2476,6 +2476,9 @@ input::placeholder {
     .footer .input{
         width: 100%;
     }
+    .mini-nav .ul{
+        width: 260px;
+    }
 
 }
 

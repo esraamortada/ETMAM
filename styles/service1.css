@@ -1280,10 +1280,10 @@ nav {
         font-weight: 400;
     }
 
-     .Aboutus img {
+    .Aboutus img {
 
         width: 60%;
-    } 
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -1323,7 +1323,7 @@ nav {
     .Aboutus img {
 
         width: 60%;
-    } 
+    }
 
 }
 
@@ -1913,9 +1913,14 @@ input::placeholder {
     }
 
 }
-@media screen and (max-width: 300px){
-    .footer .input{
+
+@media screen and (max-width: 300px) {
+    .footer .input {
         width: 100%;
+    }
+
+    .mini-nav .ul {
+        width: 260px;
     }
 
 }
@@ -1932,18 +1937,27 @@ input::placeholder {
     right: unset;
 
 }
+
 .left {
     position: absolute;
     right: 50px;
 }
+
 .change-i {
     transform: rotate(180deg);
     transition: all 0.2s ease-in-out;
 }
 
-.change-i2{
+.change-i2 {
     transform: rotate(180deg);
 }
-.footer-arabic{
+
+.footer-arabic {
     transform: rotate(180deg);
+}
+
+.active2 {
+    color: #4F8280 !important;
+    font-weight: 600 !important;
+    
 }

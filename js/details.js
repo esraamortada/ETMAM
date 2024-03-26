@@ -318,3 +318,18 @@ a.addEventListener('click',(e)=>{
 });
 });
 
+
+// const sections = document.querySelectorAll('p[id]');
+// const scrollActive = ()=>{
+//     const scrollY = window.pageYOffset;
+//     sections.forEach(current =>{
+//         const sectionHeight = current.offsetHeight,
+//         sectionTop= current.offsetTop -58,
+//         sectionId  = current.getAttribute('href');
+//         sectionClass = document.querySelector('.linkss s[href*=' + sectionId + ']')
+
+
+//     })
+
+// }
+

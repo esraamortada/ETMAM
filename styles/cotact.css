@@ -504,7 +504,9 @@ nav {
 }
 
 
-
+.contact-us .img {
+    object-fit: cover;
+}
 
 label {
     font-size: 20px;
@@ -1053,6 +1055,9 @@ input::placeholder {
 @media screen and (max-width: 300px){
     .footer .input{
         width: 100%;
+    }
+    .mini-nav .ul{
+        width: 260px;
     }
 
 }

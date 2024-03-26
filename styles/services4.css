@@ -1460,6 +1460,9 @@ input::placeholder {
     .footer .input{
         width: 100%;
     }
+    .mini-nav .ul{
+        width: 260px;
+    }
 
 }
 
@@ -1490,4 +1493,10 @@ input::placeholder {
 }
 .footer-arabic{
     transform: rotate(180deg);
+}
+
+.active2 {
+    color: #4F8280 !important;
+    font-weight: 600 !important;
+    
 }
