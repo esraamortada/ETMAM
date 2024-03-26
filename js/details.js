@@ -300,30 +300,34 @@ subscribe.addEventListener('submit', (e) => {
 
 
 /*table of content*/
-document.querySelectorAll(".linkk").forEach((a)=>{
-a.addEventListener('click',(e)=>{
-    e.preventDefault();
-    const sid = a.getAttribute('href');
-    console.log(this);
+// document.querySelectorAll(".linkk").forEach((a)=>{
+// a.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     const sid = a.getAttribute('href');
+//     console.log(this);
     
-    document.querySelector(sid).scrollIntoView({
-        behavior:'smooth'
+//     document.querySelector(sid).scrollIntoView({
+//         behavior:'smooth'
+//     });
+// });
+// });
+
+
+
+document.querySelectorAll('.linkk').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const sectionId = this.getAttribute('href');
+      const section = document.querySelector(sectionId);
+      
+      if (section) {
+        const offset = section.getBoundingClientRect().top + window.pageYOffset - document.querySelector('header').offsetHeight;
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth'
+        });
+      }
     });
-});
-});
-
-
-// const sections = document.querySelectorAll('p[id]');
-// const scrollActive = ()=>{
-//     const scrollY = window.pageYOffset;
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight,
-//         sectionTop= current.offsetTop -58,
-//         sectionId  = current.getAttribute('href');
-//         sectionClass = document.querySelector('.linkss s[href*=' + sectionId + ']')
-
-
-//     })
-
-// }
-
+  });
+  
