@@ -123,12 +123,14 @@ function change_style_ltr() {
     document.querySelector('.lang-img2').src ="images/flag.svg";
 
 
+
     
     document.querySelector(".select-text2").textContent="English (UK)";
     document.querySelectorAll('.i').forEach((i)=>{
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
   
 
 
@@ -157,6 +159,7 @@ function change_style() {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
 
     
 

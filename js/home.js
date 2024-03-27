@@ -5,9 +5,9 @@ function appear() {
     document.querySelector("#icon").classList.toggle('change-i');
 
 }
-function removeIcon() {
-    document.querySelector("#icon").classList.remove('change-i');
-}
+// function removeIcon() {
+//     document.querySelector("#icon").classList.remove('change-i');
+// }
 function appear_nav() {
     document.querySelector(".mini-nav").style.display = "block";
 }
@@ -166,6 +166,8 @@ function change_style_ltr() {
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
+
 
 
 
@@ -208,6 +210,8 @@ function change_style() {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
+
 
 
 

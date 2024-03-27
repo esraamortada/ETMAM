@@ -165,6 +165,7 @@ function change_style_ltr() {
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
     document.querySelector(".vector").classList.remove("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
 
 
 
@@ -195,8 +196,9 @@ function change_style() {
     document.querySelector(".footer-img").classList.add("footer-arabic");
     document.querySelector(".vector").classList.add("footer-arabic");
 
-
+    document.querySelector("#icon").classList.remove('change-i');
     console.log(document.querySelector(".mini-nav").style.left);
+
 }
 
 

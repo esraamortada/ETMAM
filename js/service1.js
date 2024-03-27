@@ -22,6 +22,7 @@ function change_style_ltr() {
         i.classList.remove("change-i2")
     });
     document.querySelector(".footer-img").classList.remove("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
   
 
 
@@ -55,6 +56,7 @@ function change_style() {
         i.classList.add("change-i2")
     });
     document.querySelector(".footer-img").classList.add("footer-arabic");
+    document.querySelector("#icon").classList.remove('change-i');
     // document.querySelector('body').classList.add("arabic");
 
 
