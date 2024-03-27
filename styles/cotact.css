@@ -51,8 +51,8 @@ header.scroll {
 }
 
 .active {
-    color: #FDEBC5;
-    font-weight: 600;
+    color: #FDEBC5 !important;
+    /* font-weight: 600; */
 }
 
 .logo {
@@ -61,16 +61,16 @@ header.scroll {
     column-gap: 20px;
 }
 
-a {
+ a {
     text-decoration: none;
     color: #F4F0EC;
     font-size: 20px;
     transition: all 0.5s ease-in;
 }
 
-header .navbar a:hover {
+ a:hover {
     color: #FDEBC5;
-    font-weight: 600;
+    /* font-weight: 600; */
     cursor: pointer;
 
 }

@@ -68,7 +68,7 @@ a {
 
 a:hover {
     color: #FDEBC5;
-    font-weight: 600;
+    /* font-weight: 600; */
    
 }
 .navbar {
@@ -1731,10 +1731,10 @@ input::placeholder {
 
 .active2 {
     color: #4F8280 !important;
-    font-weight: 600 !important;
+    /* font-weight: 600 !important; */
     
 }
 .active {
     color: #FDEBC5;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
