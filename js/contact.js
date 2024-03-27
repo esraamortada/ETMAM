@@ -320,8 +320,9 @@ main2.addEventListener('click', () => {
     activeFlag = !activeFlag
 })
 
-/*subscribeeeee*/
+/*subscribeee*/
 const subscribe = document.getElementById('subscribe');
+
 function saveEmail() {
     fetch("https://api.brevo.com/v3/contacts", {
         method: "POST",
@@ -330,18 +331,24 @@ function saveEmail() {
         }),
         headers: {
             "Content-type": "application/json",
-            "api-key": "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",
+            "api-key": "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",
         }
-    },).then(response => {
+    })
+    .then(response => {
+        console.log(response.status);
         if (response.ok) {
             document.getElementById('subscribe-text').textContent = "Congratulations your email saved!!!!";
             setTimeout(() => { document.getElementById('subscribe-text').textContent = "" }, 3000);
+        } else if (response.status === 400) { 
+            document.getElementById('subscribe-text').textContent = "You already subscribed before";
+            setTimeout(() => { document.getElementById('subscribe-text').textContent = "" }, 3000);
         }
     })
-        .catch((err) => {
-            console.log(err);
-        })
+    .catch((err) => {
+        console.log(err);
+    });
 }
+
 function reset2() {
     document.getElementById('mail').value = '';
 }
@@ -350,4 +357,4 @@ subscribe.addEventListener('submit', (e) => {
     e.preventDefault();
     saveEmail();
     reset2();
-})
+});
