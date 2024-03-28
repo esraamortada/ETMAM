@@ -1073,6 +1073,7 @@ nav {
     width: 100%;
     position: relative;
     z-index: 2;
+    background-color: #FEFDFD;
 
 
 }
@@ -1262,7 +1263,7 @@ nav {
     .after-services {
         padding: 10px 0px;
     } */
-    
+
 
     .hr {
         width: 1px;
