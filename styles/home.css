@@ -1182,7 +1182,7 @@ nav {
 
     .project {
         width: 25%;
-        row-gap: 5px;
+        /* row-gap: 5px; */
     }
 
 }
@@ -1230,7 +1230,7 @@ nav {
 
     .project {
         width: 25%;
-        row-gap: 5px;
+        /* row-gap: 5px; */
     }
 }
 
@@ -1262,6 +1262,7 @@ nav {
     .after-services {
         padding: 10px 0px;
     } */
+    
 
     .hr {
         width: 1px;
@@ -1275,7 +1276,7 @@ nav {
 
     .project {
         width: 25%;
-        row-gap: 5px;
+      
     }
 
     .after-services #after {
